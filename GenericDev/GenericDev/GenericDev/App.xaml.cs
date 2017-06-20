@@ -13,8 +13,7 @@ namespace GenericDev
         {
             InitializeComponent();
 
-            //MainPage = new GenericDev.MainPage();
-            MainPage = new GenericDev.QuotesPage();
+            MainPage = new GenericDev.MainPage();
         }
 
         protected override void OnStart()
