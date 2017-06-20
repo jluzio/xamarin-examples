@@ -39,6 +39,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppConstants.cs" />
+    <Compile Include="GridLayout\Exercise1.xaml.cs">
+      <DependentUpon>Exercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridLayout\Exercise2.xaml.cs">
+      <DependentUpon>Exercise2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridLayout\ExamplesPage.xaml.cs">
+      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -46,14 +55,14 @@
     <Compile Include="QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StackLayout\StackLayoutExercise1.xaml.cs">
-      <DependentUpon>StackLayoutExercise1.xaml</DependentUpon>
+    <Compile Include="StackLayout\Exercise1.xaml.cs">
+      <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StackLayout\StackLayoutExercise2.xaml.cs">
-      <DependentUpon>StackLayoutExercise2.xaml</DependentUpon>
+    <Compile Include="StackLayout\Exercise2.xaml.cs">
+      <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StackLayout\StackLayoutPage.xaml.cs">
-      <DependentUpon>StackLayoutPage.xaml</DependentUpon>
+    <Compile Include="StackLayout\ExamplesPage.xaml.cs">
+      <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -87,19 +96,37 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackLayout\StackLayoutPage.xaml">
+    <EmbeddedResource Include="StackLayout\ExamplesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackLayout\StackLayoutExercise1.xaml">
+    <EmbeddedResource Include="StackLayout\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackLayout\StackLayoutExercise2.xaml">
+    <EmbeddedResource Include="StackLayout\Exercise2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridLayout\ExamplesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridLayout\Exercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridLayout\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

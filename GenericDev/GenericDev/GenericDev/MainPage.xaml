@@ -2,8 +2,11 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GenericDev"
+             xmlns:localStackLayout="clr-namespace:GenericDev.StackLayout"
+             xmlns:localGridLayout="clr-namespace:GenericDev.GridLayout"
              x:Class="GenericDev.MainPage">
     <!--Pages can be added as references or inline-->
     <local:QuotesPage Title="Quotes" />
-    <local:StackLayoutPage Title="StackLayout" />
+    <localStackLayout:ExamplesPage Title="Stack Layout" />
+    <localGridLayout:ExamplesPage Title="Grid Layout" />
 </TabbedPage>

@@ -1,15 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GenericDev.StackLayoutExercise2">
+             x:Class="GenericDev.StackLayout.Exercise2">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Fill">
+        <StackLayout>
             <StackLayout Padding="20">
                 <Label Text="lx_photographer" />
             </StackLayout>
             <Image Source="http://lorempixel.com/1920/1080/nature/3/" />
             <StackLayout Padding="20">
-                <StackLayout Orientation="Horizontal" Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="10" Padding="0, 0, 0, 20">
                     <Label Text="Like" TextColor="Blue" />
                     <Label Text="Comment" TextColor="Blue" />
                     <Label Text="Share" TextColor="Blue" />

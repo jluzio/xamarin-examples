@@ -7,24 +7,25 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GenericDev
+namespace GenericDev.GridLayout
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackLayoutPage : ContentPage
+    public partial class ExamplesPage : ContentPage
     {
-        public StackLayoutPage()
+        public ExamplesPage()
         {
             InitializeComponent();
         }
 
         async private void OnExercise1ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new StackLayoutExercise1());
+            await Navigation.PushModalAsync(new Exercise1());
         }
 
         async private void OnExercise2ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new StackLayoutExercise2());
+            await Navigation.PushModalAsync(new Exercise2());
         }
+
     }
 }
