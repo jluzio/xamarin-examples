@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GenericDev.StackLayout
+namespace GenericDev.AbsoluteLayoutExamples
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ExamplesPage : ContentPage
-    {
-        public ExamplesPage()
-        {
-            InitializeComponent();
-        }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class ExamplesPage : ContentPage
+	{
+		public ExamplesPage ()
+		{
+			InitializeComponent ();
+		}
 
         async private void OnExercise1ButtonClick(object sender, EventArgs e)
         {
@@ -26,5 +26,6 @@ namespace GenericDev.StackLayout
         {
             await Navigation.PushModalAsync(new Exercise2());
         }
-    }
+	}
+
 }

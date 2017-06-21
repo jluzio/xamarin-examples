@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GenericDev.GridLayout
+namespace GenericDev.GridLayoutExamples
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Exercise1 : ContentPage

@@ -35,17 +35,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbsoluteLayoutExamples\ExamplesPage.xaml.cs">
+      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AbsoluteLayoutExamples\Exercise1.xaml.cs">
+      <DependentUpon>Exercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AbsoluteLayoutExamples\Exercise2.xaml.cs">
+      <DependentUpon>Exercise2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppConstants.cs" />
-    <Compile Include="GridLayout\Exercise1.xaml.cs">
+    <Compile Include="GridLayoutExamples\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GridLayout\Exercise2.xaml.cs">
+    <Compile Include="GridLayoutExamples\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GridLayout\ExamplesPage.xaml.cs">
+    <Compile Include="GridLayoutExamples\ExamplesPage.xaml.cs">
       <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
@@ -55,13 +64,13 @@
     <Compile Include="QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StackLayout\Exercise1.xaml.cs">
+    <Compile Include="StackLayoutExamples\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StackLayout\Exercise2.xaml.cs">
+    <Compile Include="StackLayoutExamples\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StackLayout\ExamplesPage.xaml.cs">
+    <Compile Include="StackLayoutExamples\ExamplesPage.xaml.cs">
       <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -96,37 +105,55 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackLayout\ExamplesPage.xaml">
+    <EmbeddedResource Include="StackLayoutExamples\ExamplesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackLayout\Exercise1.xaml">
+    <EmbeddedResource Include="StackLayoutExamples\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StackLayout\Exercise2.xaml">
+    <EmbeddedResource Include="StackLayoutExamples\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridLayout\ExamplesPage.xaml">
+    <EmbeddedResource Include="GridLayoutExamples\ExamplesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridLayout\Exercise1.xaml">
+    <EmbeddedResource Include="GridLayoutExamples\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridLayout\Exercise2.xaml">
+    <EmbeddedResource Include="GridLayoutExamples\Exercise2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsoluteLayoutExamples\ExamplesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsoluteLayoutExamples\Exercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsoluteLayoutExamples\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

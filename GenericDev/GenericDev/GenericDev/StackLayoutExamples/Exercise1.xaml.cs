@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GenericDev.GridLayout
+namespace GenericDev.StackLayoutExamples
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Exercise2 : ContentPage
+    public partial class Exercise1 : ContentPage
     {
-        public Exercise2()
+        public Exercise1()
         {
             InitializeComponent();
         }

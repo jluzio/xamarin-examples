@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.AbsoluteLayoutExamples.Exercise1">
+    <AbsoluteLayout BackgroundColor="Yellow">
+        <!--
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 0.5, 0.33" AbsoluteLayout.LayoutFlags="All"
+                     BackgroundColor="Yellow">
+            <Label Text="$11.95" 
+                   HorizontalOptions="Center" 
+                   FontSize="60" FontAttributes="Bold" TextColor="#33353a" />
+            <Button Text="Add $11.95 Credit" 
+                    HorizontalOptions="Center" BorderRadius="15" HeightRequest="30"
+                    FontSize="15" FontAttributes="Bold" TextColor="White" BackgroundColor="#1695A3" />
+        </StackLayout>
+        -->
+        <!--
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All"
+                     VerticalOptions="Start" HorizontalOptions="Start"
+                     BackgroundColor="Green">
+            <Label Text="Why pay for credit?"
+                   HorizontalOptions="Center"
+                   FontSize="15" FontAttributes="Bold" />
+            <Label
+                   HorizontalOptions="Center"
+                   FontSize="13">
+                Because
+                of
+                reasons...
+            </Label>
+        </StackLayout>
+        -->
+
+        <BoxView AbsoluteLayout.LayoutBounds="0.0, 0.0, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Green" />
+        <BoxView AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Blue" />
+
+    </AbsoluteLayout>
+</ContentPage>

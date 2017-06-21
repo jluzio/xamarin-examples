@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:GenericDev"
-             x:Class="GenericDev.StackLayout.ExamplesPage">
+             x:Class="GenericDev.AbsoluteLayoutExamples.Exercise2">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Exercise 1" Clicked="OnExercise1ButtonClick" />
-            <Button Text="Exercise 2" Clicked="OnExercise2ButtonClick" />
+            <Label Text="Welcome to Xamarin Forms!" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
