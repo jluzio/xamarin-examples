@@ -6,6 +6,11 @@
         <StackLayout>
             <Button Text="Exercise 1" Clicked="OnExercise1ButtonClick" />
             <Button Text="Exercise 2" Clicked="OnExercise2ButtonClick" />
+            <Button Text="CheckerBoard" Clicked="OnCheckerBoardButtonClick" />
+            <Label>
+                See README.txt 
+                ( https://stackoverflow.com/questions/37964909/xamarin-forms-absolutelayout-how-does-works-positions )
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

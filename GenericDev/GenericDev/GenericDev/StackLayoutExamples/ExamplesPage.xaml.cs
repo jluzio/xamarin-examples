@@ -26,5 +26,6 @@ namespace GenericDev.StackLayoutExamples
         {
             await Navigation.PushModalAsync(new Exercise2());
         }
+
     }
 }
