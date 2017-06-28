@@ -5,6 +5,7 @@
              xmlns:localStackLayoutExamples="clr-namespace:GenericDev.StackLayoutExamples"
              xmlns:localGridLayoutExamples="clr-namespace:GenericDev.GridLayoutExamples"
              xmlns:localAbsoluteLayoutExamples="clr-namespace:GenericDev.AbsoluteLayoutExamples"
+             xmlns:localRelativeLayoutExamples="clr-namespace:GenericDev.RelativeLayoutExamples"
              x:Class="GenericDev.MainPage">
     <!--Pages can be added as references or inline-->
     <ContentPage Title="Home">
@@ -14,4 +15,5 @@
     <localStackLayoutExamples:ExamplesPage Title="Stack Layout" />
     <localGridLayoutExamples:ExamplesPage Title="Grid Layout" />
     <localAbsoluteLayoutExamples:ExamplesPage Title="Absolute Layout" />
+    <localRelativeLayoutExamples:ExamplesPage Title="Relative Layout" />
 </TabbedPage>
