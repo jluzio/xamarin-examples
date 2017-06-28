@@ -32,6 +32,11 @@ namespace GenericDev.AbsoluteLayoutExamples
             await Navigation.PushModalAsync(new CheckerBoardPage());
         }
 
+        async private void OnTestingValuesButtonClick(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new TestingValues());
+        }
+
     }
 
 }

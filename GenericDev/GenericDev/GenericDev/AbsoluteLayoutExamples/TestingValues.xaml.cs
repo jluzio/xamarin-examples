@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace GenericDev.AbsoluteLayoutExamples
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Exercise2 : ContentPage
+	public partial class TestingValues : ContentPage
 	{
-		public Exercise2()
+		public TestingValues ()
 		{
-			InitializeComponent();
+			InitializeComponent ();
 		}
 	}
 }
