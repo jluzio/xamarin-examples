@@ -3,6 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GenericDev.AbsoluteLayoutExamples.Exercise2">
     <ContentPage.Content>
-        <Label>Todo</Label>
+        <AbsoluteLayout>
+            <Image Source="http://lorempixel.com/1920/1080/nature/7"
+                   AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   Aspect="AspectFill"
+                   />
+            <Label Text="Relax" FontSize="30"
+                   AbsoluteLayout.LayoutBounds="0, 20, 1, 1"
+                   AbsoluteLayout.LayoutFlags="SizeProportional"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   />
+            <BoxView AbsoluteLayout.LayoutBounds="0, 1, 1, 100"
+                     AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                     Opacity="0.5"
+                     Color="LightSkyBlue" 
+                     />
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0, 1, 1, 100"
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                Orientation="Horizontal"
+                Padding="30, 0">
+                <Label Text="Profile" HorizontalOptions="Center" VerticalOptions="Center"
+                       FontSize="15" TextColor="White" />
+                <Label Text="Relax" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"
+                       FontSize="15" TextColor="White" />
+                <Label Text="Themes" HorizontalOptions="Center" VerticalOptions="Center"
+                       FontSize="15" TextColor="White" />
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
