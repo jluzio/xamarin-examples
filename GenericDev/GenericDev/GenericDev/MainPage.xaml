@@ -6,10 +6,14 @@
              xmlns:localGridLayoutExamples="clr-namespace:GenericDev.GridLayoutExamples"
              xmlns:localAbsoluteLayoutExamples="clr-namespace:GenericDev.AbsoluteLayoutExamples"
              xmlns:localRelativeLayoutExamples="clr-namespace:GenericDev.RelativeLayoutExamples"
+             xmlns:localCore="clr-namespace:GenericDev.Core"
              x:Class="GenericDev.MainPage">
     <!--Pages can be added as references or inline-->
     <ContentPage Title="Home">
-        <Label Text="Welcome!" FontSize="30" HorizontalOptions="Center" VerticalOptions="Center" />
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Welcome!" FontSize="30" HorizontalTextAlignment="Center" />
+            <Label x:Name="systemInfoLabel" FontSize="20" HorizontalTextAlignment="Center" />
+        </StackLayout>
     </ContentPage>
     <local:QuotesPage Title="Quotes" />
     <localStackLayoutExamples:ExamplesPage Title="Stack Layout" />
