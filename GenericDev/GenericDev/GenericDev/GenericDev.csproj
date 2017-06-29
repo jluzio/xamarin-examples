@@ -54,6 +54,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppConstants.cs" />
+    <Compile Include="BindingExamples\BackwardsBindings.xaml.cs">
+      <DependentUpon>BackwardsBindings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BindingExamples\ExamplesPage.xaml.cs">
+      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Core\ISystemInfo.cs" />
     <Compile Include="GridLayoutExamples\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
@@ -194,6 +200,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RelativeLayoutExamples\Exercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BindingExamples\BackwardsBindings.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BindingExamples\ExamplesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
