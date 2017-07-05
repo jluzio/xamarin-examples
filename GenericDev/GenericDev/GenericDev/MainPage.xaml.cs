@@ -16,7 +16,12 @@ namespace GenericDev
             InitializeComponent();
 
             var systemInfo = DependencyService.Get<ISystemInfo>();
-            systemInfoLabel.Text = systemInfo.Title();
+            if (systemInfo != null)
+            {
+                systemInfoLabel.Text = systemInfo.Title();
+            } else {
+                systemInfoLabel.Text = "<Undefined systemInfo.Title()>";
+            }
         }
     }
 }
