@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDev", "GenericDev\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDev.iOS", "GenericDev\GenericDev.iOS\GenericDev.iOS.csproj", "{7B0B660C-686A-4D23-A8B9-BC2BCB53553A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDev.UWP", "GenericDev.UWP\GenericDev.UWP.csproj", "{A4E2BF12-CF4E-43D3-A550-C13DD57C5394}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDev.UWP", "GenericDev\GenericDev.UWP\GenericDev.UWP.csproj", "{A4E2BF12-CF4E-43D3-A550-C13DD57C5394}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

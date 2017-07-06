@@ -14,6 +14,10 @@
                 <Setter Property="TextColor" Value="Red" />
                 <Setter Property="HorizontalOptions" Value="Center" />
             </Style>
+            <OnPlatform x:Key="localImgRoot" x:TypeArguments="x:String"
+                        Android=""
+                        iOS=""
+                        WinPhone="LocalImages" />
         </ResourceDictionary>
 
 	</Application.Resources>

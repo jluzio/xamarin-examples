@@ -6,6 +6,8 @@
         <StackLayout>
             <Button Text="Loading Indicator" Clicked="OnLoadingIndicatorButtonClick" />
             <Button Text="Uri Image" Clicked="OnUriImageButtonClick" />
+            <Button Text="Embedded Image" Clicked="OnEmbeddedImageButtonClick" />
+            <Button Text="Local Image" Clicked="OnLocalImageButtonClick" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

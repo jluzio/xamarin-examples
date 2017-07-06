@@ -27,5 +27,15 @@ namespace GenericDev.ImageExamples
             await Navigation.PushModalAsync(new LoadingIndicatorExternalImage());
         }
 
+        async private void OnEmbeddedImageButtonClick(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EmbeddedImage());
+        }
+
+        async private void OnLocalImageButtonClick(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new LocalImage());
+        }
+
     }
 }

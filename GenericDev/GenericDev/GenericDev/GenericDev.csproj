@@ -70,6 +70,9 @@
     <Compile Include="GridLayoutExamples\ExamplesPage.xaml.cs">
       <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImageExamples\EmbeddedImage.xaml.cs">
+      <DependentUpon>EmbeddedImage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ImageExamples\ExamplesPage.xaml.cs">
       <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
@@ -79,9 +82,15 @@
     <Compile Include="ImageExamples\LoadingIndicatorExternalImage.xaml.cs">
       <DependentUpon>LoadingIndicatorExternalImage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImageExamples\LocalImage.xaml.cs">
+      <DependentUpon>LocalImage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MarkupExtension\ImageConfig.cs" />
+    <Compile Include="MarkupExtension\ImageFileExtension.cs" />
+    <Compile Include="MarkupExtension\ImageResourceExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
@@ -194,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AbsoluteLayoutExamples\README.txt" />
+    <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AbsoluteLayoutExamples\TestingValues.xaml">
@@ -239,6 +249,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ImageExamples\LoadingIndicator.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageExamples\EmbeddedImage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageExamples\LocalImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

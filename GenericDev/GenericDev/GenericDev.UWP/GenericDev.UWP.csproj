@@ -108,6 +108,7 @@
     <None Include="GenericDev.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LocalImages\clock.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -136,11 +137,12 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GenericDev\GenericDev\GenericDev.csproj">
+    <ProjectReference Include="..\GenericDev\GenericDev.csproj">
       <Project>{838f7d72-0f2a-4124-8835-50ca7f534d5e}</Project>
       <Name>GenericDev</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
