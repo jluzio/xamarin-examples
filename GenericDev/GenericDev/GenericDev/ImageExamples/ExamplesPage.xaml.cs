@@ -17,9 +17,14 @@ namespace GenericDev.ImageExamples
             InitializeComponent();
         }
 
-        async private void OnExercise1ButtonClick(object sender, EventArgs e)
+        async private void OnLoadingIndicatorButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise1());
+            await Navigation.PushModalAsync(new LoadingIndicator());
+        }
+
+        async private void OnUriImageButtonClick(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new LoadingIndicatorExternalImage());
         }
 
     }

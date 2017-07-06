@@ -7,6 +7,7 @@
              xmlns:localAbsoluteLayoutExamples="clr-namespace:GenericDev.AbsoluteLayoutExamples"
              xmlns:localRelativeLayoutExamples="clr-namespace:GenericDev.RelativeLayoutExamples"
              xmlns:localBindings="clr-namespace:GenericDev.BindingExamples"
+             xmlns:localImages="clr-namespace:GenericDev.ImageExamples"
              xmlns:localCore="clr-namespace:GenericDev.Core"
              x:Class="GenericDev.MainPage">
     <!--Pages can be added as references or inline-->
@@ -22,4 +23,5 @@
     <localAbsoluteLayoutExamples:ExamplesPage Title="Absolute Layout" />
     <localRelativeLayoutExamples:ExamplesPage Title="Relative Layout" />
     <localBindings:ExamplesPage Title="Bindings" />
+    <localImages:ExamplesPage Title="Images" />
 </TabbedPage>

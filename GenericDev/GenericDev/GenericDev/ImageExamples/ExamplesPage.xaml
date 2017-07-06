@@ -4,7 +4,8 @@
              x:Class="GenericDev.ImageExamples.ExamplesPage">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Exercise 1" Clicked="OnExercise1ButtonClick" />
+            <Button Text="Loading Indicator" Clicked="OnLoadingIndicatorButtonClick" />
+            <Button Text="Uri Image" Clicked="OnUriImageButtonClick" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

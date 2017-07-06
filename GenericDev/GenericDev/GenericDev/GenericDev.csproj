@@ -73,8 +73,11 @@
     <Compile Include="ImageExamples\ExamplesPage.xaml.cs">
       <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ImageExamples\Loading.xaml.cs">
-      <DependentUpon>Loading.xaml</DependentUpon>
+    <Compile Include="ImageExamples\LoadingIndicator.xaml.cs">
+      <DependentUpon>LoadingIndicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageExamples\LoadingIndicatorExternalImage.xaml.cs">
+      <DependentUpon>LoadingIndicatorExternalImage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -229,7 +232,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ImageExamples\Loading.xaml">
+    <EmbeddedResource Include="ImageExamples\LoadingIndicatorExternalImage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageExamples\LoadingIndicator.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
