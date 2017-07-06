@@ -53,6 +53,8 @@ namespace GenericDev.UWP
                 // Added for Xamarin
                 Xamarin.Forms.Forms.Init(e); // requires the `e` parameter
 
+                ImageCircle.Forms.Plugin.UWP.ImageCircleRenderer.Init();
+
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application

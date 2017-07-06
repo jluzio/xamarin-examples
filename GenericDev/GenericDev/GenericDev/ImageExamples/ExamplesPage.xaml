@@ -8,6 +8,7 @@
             <Button Text="Uri Image" Clicked="OnUriImageButtonClick" />
             <Button Text="Embedded Image" Clicked="OnEmbeddedImageButtonClick" />
             <Button Text="Local Image" Clicked="OnLocalImageButtonClick" />
+            <Button Text="Image Circle Plugin" Clicked="OnImageCirclePluginButtonClick" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
