@@ -1,0 +1,6 @@
+﻿https://github.com/jamesmontemagno/ImageCirclePlugin
+Add ImageCircleRenderer.Init(); after Xamarin.Forms.Init(); for each Platform
+
+E.g. Android:
+Xamarin.Forms.Init();//platform specific init
+ImageCircleRenderer.Init();
