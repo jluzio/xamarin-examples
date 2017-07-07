@@ -42,5 +42,10 @@ namespace GenericDev.ImageExamples
             await Navigation.PushModalAsync(new ImageCirclePlugin());
         }
 
+        async private void OnExercise1ButtonClick(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Exercise1());
+        }
+
     }
 }

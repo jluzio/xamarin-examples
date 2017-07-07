@@ -9,6 +9,7 @@
             <Button Text="Embedded Image" Clicked="OnEmbeddedImageButtonClick" />
             <Button Text="Local Image" Clicked="OnLocalImageButtonClick" />
             <Button Text="Image Circle Plugin" Clicked="OnImageCirclePluginButtonClick" />
+            <Button Text="Exercise 1" Clicked="OnExercise1ButtonClick" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

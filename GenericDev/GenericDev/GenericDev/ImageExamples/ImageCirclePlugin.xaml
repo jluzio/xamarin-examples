@@ -5,7 +5,7 @@
              x:Class="GenericDev.ImageExamples.ImageCirclePlugin">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <ic:CircleImage WidthRequest="100" HeightRequest="100" Source="http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg">
+            <ic:CircleImage WidthRequest="100" HeightRequest="100" Source="http://lorempixel.com/400/300/animals/6/">
                 
             </ic:CircleImage>
         </StackLayout>

@@ -76,6 +76,9 @@
     <Compile Include="ImageExamples\ExamplesPage.xaml.cs">
       <DependentUpon>ExamplesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImageExamples\Exercise1.xaml.cs">
+      <DependentUpon>Exercise1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ImageExamples\ImageCirclePlugin.xaml.cs">
       <DependentUpon>ImageCirclePlugin.xaml</DependentUpon>
     </Compile>
@@ -274,6 +277,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ImageExamples\ImageCirclePlugin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageExamples\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

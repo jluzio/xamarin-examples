@@ -25,7 +25,7 @@ namespace GenericDev.ImageExamples
             loadingIndicator.IsVisible = true;
             await Task.Delay(10000);
             loadingIndicator.IsRunning = false;
-            BackgroundColor = Color.White;
+            BackgroundColor = Color.Green;
             System.Diagnostics.Debug.WriteLine("loadData() done!");
         }
     }
