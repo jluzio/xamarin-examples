@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.AbsoluteLayout.Index">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Exercise 1" Clicked="OnExercise1ButtonClick" />
+            <Button Text="Exercise 2" Clicked="OnExercise2ButtonClick" />
+            <Button Text="CheckerBoard" Clicked="OnCheckerBoardButtonClick" />
+            <Button Text="Testing Values" Clicked="OnTestingValuesButtonClick" />
+            <Label>
+                See README.txt 
+                ( https://stackoverflow.com/questions/37964909/xamarin-forms-absolutelayout-how-does-works-positions )
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

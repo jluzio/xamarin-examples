@@ -39,82 +39,85 @@
     <Compile Include="MarkupExtensions\ImageConfig.cs" />
     <Compile Include="MarkupExtensions\ImageFileExtension.cs" />
     <Compile Include="MarkupExtensions\ImageResourceExtension.cs" />
-    <Compile Include="Pages\AbsoluteLayoutExamples\CheckerBoardPage.xaml.cs">
+    <Compile Include="Pages\AbsoluteLayout\CheckerBoardPage.xaml.cs">
       <DependentUpon>CheckerBoardPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AbsoluteLayoutExamples\ExamplesPage.xaml.cs">
-      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    <Compile Include="Pages\AbsoluteLayout\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AbsoluteLayoutExamples\Exercise1.xaml.cs">
+    <Compile Include="Pages\AbsoluteLayout\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AbsoluteLayoutExamples\TestingValues.xaml.cs">
+    <Compile Include="Pages\AbsoluteLayout\TestingValues.xaml.cs">
       <DependentUpon>TestingValues.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AbsoluteLayoutExamples\Exercise2.xaml.cs">
+    <Compile Include="Pages\AbsoluteLayout\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppConstants.cs" />
-    <Compile Include="Pages\BindingExamples\BackwardsBindings.xaml.cs">
+    <Compile Include="Pages\Binding\BackwardsBindings.xaml.cs">
       <DependentUpon>BackwardsBindings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BindingExamples\ExamplesPage.xaml.cs">
-      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    <Compile Include="Pages\Binding\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GridLayoutExamples\Exercise1.xaml.cs">
+    <Compile Include="Pages\Grid\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GridLayoutExamples\Exercise2.xaml.cs">
+    <Compile Include="Pages\Grid\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GridLayoutExamples\ExamplesPage.xaml.cs">
-      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    <Compile Include="Pages\Grid\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\EmbeddedImage.xaml.cs">
+    <Compile Include="Pages\Image\EmbeddedImage.xaml.cs">
       <DependentUpon>EmbeddedImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\ExamplesPage.xaml.cs">
-      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    <Compile Include="Pages\Image\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\Exercise1.xaml.cs">
+    <Compile Include="Pages\Image\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\ImageCirclePlugin.xaml.cs">
+    <Compile Include="Pages\Image\ImageCirclePlugin.xaml.cs">
       <DependentUpon>ImageCirclePlugin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\LoadingIndicator.xaml.cs">
+    <Compile Include="Pages\Image\LoadingIndicator.xaml.cs">
       <DependentUpon>LoadingIndicator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\LoadingIndicatorExternalImage.xaml.cs">
+    <Compile Include="Pages\Image\LoadingIndicatorExternalImage.xaml.cs">
       <DependentUpon>LoadingIndicatorExternalImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageExamples\LocalImage.xaml.cs">
+    <Compile Include="Pages\Image\LocalImage.xaml.cs">
       <DependentUpon>LocalImage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Misc\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pages\QuotesPage.xaml.cs">
+    <Compile Include="Pages\Misc\QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\RelativeLayoutExamples\ExamplesPage.xaml.cs">
-      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    <Compile Include="Pages\RelativeLayout\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\RelativeLayoutExamples\Exercise1.xaml.cs">
+    <Compile Include="Pages\RelativeLayout\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\StackLayoutExamples\Exercise1.xaml.cs">
+    <Compile Include="Pages\StackLayout\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\StackLayoutExamples\Exercise2.xaml.cs">
+    <Compile Include="Pages\StackLayout\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\StackLayoutExamples\ExamplesPage.xaml.cs">
-      <DependentUpon>ExamplesPage.xaml</DependentUpon>
+    <Compile Include="Pages\StackLayout\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -145,144 +148,150 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\QuotesPage.xaml">
+    <EmbeddedResource Include="Pages\Misc\QuotesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\StackLayoutExamples\ExamplesPage.xaml">
+    <EmbeddedResource Include="Pages\StackLayout\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\StackLayoutExamples\Exercise1.xaml">
+    <EmbeddedResource Include="Pages\StackLayout\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\StackLayoutExamples\Exercise2.xaml">
+    <EmbeddedResource Include="Pages\StackLayout\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\GridLayoutExamples\ExamplesPage.xaml">
+    <EmbeddedResource Include="Pages\Grid\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\GridLayoutExamples\Exercise1.xaml">
+    <EmbeddedResource Include="Pages\Grid\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\GridLayoutExamples\Exercise2.xaml">
+    <EmbeddedResource Include="Pages\Grid\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AbsoluteLayoutExamples\ExamplesPage.xaml">
+    <EmbeddedResource Include="Pages\AbsoluteLayout\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AbsoluteLayoutExamples\Exercise1.xaml">
+    <EmbeddedResource Include="Pages\AbsoluteLayout\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AbsoluteLayoutExamples\Exercise2.xaml">
+    <EmbeddedResource Include="Pages\AbsoluteLayout\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AbsoluteLayoutExamples\CheckerBoardPage.xaml">
+    <EmbeddedResource Include="Pages\AbsoluteLayout\CheckerBoardPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\AbsoluteLayoutExamples\README.txt" />
-    <Content Include="Pages\ImageExamples\ImageCirclePlugin.txt" />
+    <Content Include="Pages\AbsoluteLayout\README.txt" />
+    <Content Include="Pages\Image\ImageCirclePlugin.txt" />
     <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AbsoluteLayoutExamples\TestingValues.xaml">
+    <EmbeddedResource Include="Pages\AbsoluteLayout\TestingValues.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\RelativeLayoutExamples\ExamplesPage.xaml">
+    <EmbeddedResource Include="Pages\RelativeLayout\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\RelativeLayoutExamples\Exercise1.xaml">
+    <EmbeddedResource Include="Pages\RelativeLayout\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\BindingExamples\BackwardsBindings.xaml">
+    <EmbeddedResource Include="Pages\Binding\BackwardsBindings.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\BindingExamples\ExamplesPage.xaml">
+    <EmbeddedResource Include="Pages\Binding\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\ExamplesPage.xaml">
+    <EmbeddedResource Include="Pages\Image\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\LoadingIndicatorExternalImage.xaml">
+    <EmbeddedResource Include="Pages\Image\LoadingIndicatorExternalImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\LoadingIndicator.xaml">
+    <EmbeddedResource Include="Pages\Image\LoadingIndicator.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\EmbeddedImage.xaml">
+    <EmbeddedResource Include="Pages\Image\EmbeddedImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\LocalImage.xaml">
+    <EmbeddedResource Include="Pages\Image\LocalImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\ImageCirclePlugin.xaml">
+    <EmbeddedResource Include="Pages\Image\ImageCirclePlugin.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ImageExamples\Exercise1.xaml">
+    <EmbeddedResource Include="Pages\Image\Exercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Misc\Index.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

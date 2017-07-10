@@ -2,13 +2,13 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GenericDev"
-             xmlns:localStackLayoutExamples="clr-namespace:GenericDev.StackLayoutExamples"
-             xmlns:localGridLayoutExamples="clr-namespace:GenericDev.GridLayoutExamples"
-             xmlns:localAbsoluteLayoutExamples="clr-namespace:GenericDev.AbsoluteLayoutExamples"
-             xmlns:localRelativeLayoutExamples="clr-namespace:GenericDev.RelativeLayoutExamples"
-             xmlns:localBindings="clr-namespace:GenericDev.BindingExamples"
-             xmlns:localImages="clr-namespace:GenericDev.ImageExamples"
-             xmlns:localCore="clr-namespace:GenericDev.Core"
+             xmlns:localStackLayout="clr-namespace:GenericDev.StackLayout"
+             xmlns:localGrid="clr-namespace:GenericDev.Grid"
+             xmlns:localAbsoluteLayout="clr-namespace:GenericDev.AbsoluteLayout"
+             xmlns:localRelativeLayout="clr-namespace:GenericDev.RelativeLayout"
+             xmlns:localBindings="clr-namespace:GenericDev.Binding"
+             xmlns:localImages="clr-namespace:GenericDev.Image"             
+             xmlns:localMisc="clr-namespace:GenericDev.Misc"
              x:Class="GenericDev.MainPage">
     <!--Pages can be added as references or inline-->
     <ContentPage Title="Home">
@@ -17,11 +17,11 @@
             <Label x:Name="systemInfoLabel" FontSize="20" HorizontalTextAlignment="Center" />
         </StackLayout>
     </ContentPage>
-    <local:QuotesPage Title="Quotes" />
-    <localStackLayoutExamples:ExamplesPage Title="Stack Layout" />
-    <localGridLayoutExamples:ExamplesPage Title="Grid Layout" />
-    <localAbsoluteLayoutExamples:ExamplesPage Title="Absolute Layout" />
-    <localRelativeLayoutExamples:ExamplesPage Title="Relative Layout" />
-    <localBindings:ExamplesPage Title="Bindings" />
-    <localImages:ExamplesPage Title="Images" />
+    <localStackLayout:Index Title="Stack Layout" />
+    <localGrid:Index Title="Grid Layout" />
+    <localAbsoluteLayout:Index Title="Absolute Layout" />
+    <localRelativeLayout:Index Title="Relative Layout" />
+    <localBindings:Index Title="Bindings" />
+    <localImages:Index Title="Images" />
+    <localMisc:Index Title="Misc" />
 </TabbedPage>
