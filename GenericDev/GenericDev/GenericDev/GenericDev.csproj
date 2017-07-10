@@ -39,7 +39,6 @@
     <Compile Include="MarkupExtensions\ImageConfig.cs" />
     <Compile Include="MarkupExtensions\ImageFileExtension.cs" />
     <Compile Include="MarkupExtensions\ImageResourceExtension.cs" />
-    <Compile Include="MarkupExtensions\TranslateExtension.cs" />
     <Compile Include="Pages\AbsoluteLayoutExamples\CheckerBoardPage.xaml.cs">
       <DependentUpon>CheckerBoardPage.xaml</DependentUpon>
     </Compile>
