@@ -9,6 +9,7 @@
              xmlns:localBindings="clr-namespace:GenericDev.Binding"
              xmlns:localImages="clr-namespace:GenericDev.Image"             
              xmlns:localMisc="clr-namespace:GenericDev.Misc"
+             xmlns:localListView="clr-namespace:GenericDev.ListView"
              x:Class="GenericDev.MainPage">
     <!--Pages can be added as references or inline-->
     <ContentPage Title="Home">
@@ -18,10 +19,11 @@
         </StackLayout>
     </ContentPage>
     <localStackLayout:Index Title="Stack Layout" />
-    <localGrid:Index Title="Grid Layout" />
+    <localGrid:Index Title="Grid" />
     <localAbsoluteLayout:Index Title="Absolute Layout" />
     <localRelativeLayout:Index Title="Relative Layout" />
     <localBindings:Index Title="Bindings" />
     <localImages:Index Title="Images" />
+    <localListView:Index Title="List View" />
     <localMisc:Index Title="Misc" />
 </TabbedPage>
