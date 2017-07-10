@@ -95,7 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Core\SystemInfo.cs" />
+    <Compile Include="Config\SystemInfo.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -108,9 +108,9 @@
     <None Include="GenericDev.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LocalImages\clock.png" />
-    <Content Include="LocalImages\left.png" />
-    <Content Include="LocalImages\right.png" />
+    <Content Include="ResourcesImages\clock.png" />
+    <Content Include="ResourcesImages\left.png" />
+    <Content Include="ResourcesImages\right.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

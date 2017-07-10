@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenericDev.Core
+namespace GenericDev.MarkupExtensions
 {
-    public interface ISystemInfo
+    class TranslateExtension
     {
-        string Title();
     }
 }

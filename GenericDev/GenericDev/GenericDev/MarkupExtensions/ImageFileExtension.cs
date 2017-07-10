@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GenericDev.MarkupExtension
+namespace GenericDev.MarkupExtensions
 {
     [ContentProperty("Source")]
     public class ImageFileExtension : IMarkupExtension

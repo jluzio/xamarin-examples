@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
+using Foundation;
+using UIKit;
 
 using Xamarin.Forms;
 
-using GenericDev.Core;
-using GenericDev.UWP.Core;
+using GenericDev.iOS.Config;
+using GenericDev.Config;
 
 [assembly: Dependency(typeof(SystemInfo))]
-namespace GenericDev.UWP.Core
+namespace GenericDev.iOS.Config
 {
     class SystemInfo : ISystemInfo
     {
         public string Title()
         {
-            return "GenericDev.UWP";
+            return "GenericDev.iOS";
         }
     }
 }

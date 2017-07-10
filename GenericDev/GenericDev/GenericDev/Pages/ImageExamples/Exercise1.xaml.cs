@@ -41,8 +41,38 @@ namespace GenericDev.ImageExamples
 
         private void nextBtn_Clicked(object sender, EventArgs e)
         {
+            System.Diagnostics.Debug.WriteLine("nextBtn_Clicked");
             ImageIndex = Math.Min(ImageIndex + 1, MaxImageIndex);
             image.Source = GetImageSource();
         }
+
+        /*
+        private void image_PropertyChanging(object sender, PropertyChangingEventArgs e)
+        {
+            // Fix issues with UWP until bug is fixed in Xamarin 2.3.5 (?)
+            if (String.Equals(Device.RuntimePlatform, Device.Windows)) {
+                System.Diagnostics.Debug.WriteLine(String.Format("image_PropertyChanging {0}", e.PropertyName));
+                if (String.Equals(e.PropertyName, "IsLoading") && Device.RuntimePlatform == Device.Windows)
+                {
+                    loadingIndicator.IsRunning = true;
+                    loadingIndicator.IsVisible = true;
+                }
+            }
+        }
+
+        private void image_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            // Fix issues with UWP until bug is fixed in Xamarin 2.3.5 (?)
+            if (String.Equals(Device.RuntimePlatform, Device.Windows))
+            {
+                System.Diagnostics.Debug.WriteLine(String.Format("image_PropertyChanged {0}", e.PropertyName));
+                if (String.Equals(e.PropertyName, "IsLoading"))
+                {
+                    loadingIndicator.IsRunning = false;
+                    loadingIndicator.IsVisible = false;
+                }
+            }
+        }
+    */
     }
 }

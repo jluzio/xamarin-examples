@@ -12,11 +12,11 @@ using Android.Widget;
 
 using Xamarin.Forms;
 
-using GenericDev.Core;
-using GenericDev.Droid.Core;
+using GenericDev.Config;
+using GenericDev.Droid.Config;
 
 [assembly: Dependency(typeof(SystemInfo))]
-namespace GenericDev.Droid.Core
+namespace GenericDev.Droid.Config
 {
     public class SystemInfo : ISystemInfo
     {

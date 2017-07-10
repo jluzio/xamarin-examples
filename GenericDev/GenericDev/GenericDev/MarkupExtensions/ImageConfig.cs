@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-using GenericDev.MarkupExtension;
+using GenericDev.MarkupExtensions;
 
 [assembly: Dependency(typeof(ImageConfig))]
-namespace GenericDev.MarkupExtension
+namespace GenericDev.MarkupExtensions
 {
     class ImageConfig
     {
@@ -21,7 +21,7 @@ namespace GenericDev.MarkupExtension
                 {
                     case Device.Windows:
                     case Device.WinPhone:
-                        return "LocalImages/";
+                        return "ResourcesImages/";
                     default:
                         return "";
                 }

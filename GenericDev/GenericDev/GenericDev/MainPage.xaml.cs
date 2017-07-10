@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using GenericDev.Core;
+using GenericDev.Config;
 
 namespace GenericDev
 {
