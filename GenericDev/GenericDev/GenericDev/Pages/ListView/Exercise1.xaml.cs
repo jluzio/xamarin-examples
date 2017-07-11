@@ -27,6 +27,7 @@ namespace GenericDev.ListView
         private void listView_Refreshing(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("listView_Refreshing");
+            SearchService.Reload();
             PopulateView(SearchString);
             listView.EndRefresh();
         }
@@ -61,7 +62,7 @@ namespace GenericDev.ListView
         private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var search = e.SelectedItem as Search;
-            DisplayAlert("Selected", $"-> {search.Location} <-", "OK");
+            DisplayAlert("Previous Search", $"Location: {search.Location}", "OK");
         }
     }
 }

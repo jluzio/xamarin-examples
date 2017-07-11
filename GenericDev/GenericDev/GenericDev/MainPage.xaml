@@ -10,7 +10,8 @@
              xmlns:localImages="clr-namespace:GenericDev.Image"             
              xmlns:localMisc="clr-namespace:GenericDev.Misc"
              xmlns:localListView="clr-namespace:GenericDev.ListView"
-             x:Class="GenericDev.MainPage">
+             x:Class="GenericDev.MainPage"
+            >
     <!--Pages can be added as references or inline-->
     <ContentPage Title="Home">
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
@@ -18,6 +19,7 @@
             <Label x:Name="systemInfoLabel" FontSize="20" HorizontalTextAlignment="Center" />
         </StackLayout>
     </ContentPage>
+    <localMisc:Index Title="Misc" />
     <localStackLayout:Index Title="Stack Layout" />
     <localGrid:Index Title="Grid" />
     <localAbsoluteLayout:Index Title="Absolute Layout" />
@@ -25,5 +27,4 @@
     <localBindings:Index Title="Bindings" />
     <localImages:Index Title="Images" />
     <localListView:Index Title="List View" />
-    <localMisc:Index Title="Misc" />
 </TabbedPage>

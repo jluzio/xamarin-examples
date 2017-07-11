@@ -36,6 +36,11 @@ namespace GenericDev.ListView.Services
             SearchList.RemoveAll(search => search.Id == searchId);
         }
 
+        public void Reload()
+        {
+            SearchList = NewSearches();
+        }
+
         private List<Search> NewSearches()
         {
             var dateTime1 = System.DateTime.Today.AddMonths(-12);

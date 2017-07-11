@@ -12,5 +12,6 @@ namespace GenericDev.ListView.Services
     {
         IEnumerable<Search> GetSearches(String filter = null);
         void DeleteSearch(int searchId);
+        void Reload();
     }
 }
