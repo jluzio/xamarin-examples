@@ -19,7 +19,7 @@ namespace GenericDev.Binding
 
         private async void OnBackwardsBindings(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new BackwardsBindings());
+            await Navigation.PushAsync(new BackwardsBindings());
         }
     }
 }

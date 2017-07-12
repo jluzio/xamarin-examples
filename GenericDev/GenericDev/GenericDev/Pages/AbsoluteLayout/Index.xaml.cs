@@ -19,22 +19,22 @@ namespace GenericDev.AbsoluteLayout
 
         async private void OnExercise1ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise1());
+            await Navigation.PushAsync(new Exercise1());
         }
 
         async private void OnExercise2ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise2());
+            await Navigation.PushAsync(new Exercise2());
         }
 
         async private void OnCheckerBoardButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new CheckerBoardPage());
+            await Navigation.PushAsync(new CheckerBoardPage());
         }
 
         async private void OnTestingValuesButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new TestingValues());
+            await Navigation.PushAsync(new TestingValues());
         }
 
     }

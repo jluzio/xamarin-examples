@@ -19,32 +19,32 @@ namespace GenericDev.Image
 
         async private void OnLoadingIndicatorButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new LoadingIndicator());
+            await Navigation.PushAsync(new LoadingIndicator());
         }
 
         async private void OnUriImageButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new LoadingIndicatorExternalImage());
+            await Navigation.PushAsync(new LoadingIndicatorExternalImage());
         }
 
         async private void OnEmbeddedImageButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new EmbeddedImage());
+            await Navigation.PushAsync(new EmbeddedImage());
         }
 
         async private void OnLocalImageButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new LocalImage());
+            await Navigation.PushAsync(new LocalImage());
         }
 
         async private void OnImageCirclePluginButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new ImageCirclePlugin());
+            await Navigation.PushAsync(new ImageCirclePlugin());
         }
 
         async private void OnExercise1ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise1());
+            await Navigation.PushAsync(new Exercise1());
         }
 
     }

@@ -19,7 +19,7 @@ namespace GenericDev.RelativeLayout
 
         async private void OnExercise1ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise1());
+            await Navigation.PushAsync(new Exercise1());
         }
 
     }

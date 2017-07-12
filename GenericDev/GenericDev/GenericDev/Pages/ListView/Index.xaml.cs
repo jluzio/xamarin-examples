@@ -19,7 +19,7 @@ namespace GenericDev.ListView
 
         private void Exercise_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Exercise1());
+            Navigation.PushAsync(new Exercise1());
         }
     }
 }

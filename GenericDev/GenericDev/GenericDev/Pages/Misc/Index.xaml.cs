@@ -19,7 +19,7 @@ namespace GenericDev.Misc
 
         private void OnQuotes_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new QuotesPage());
+            Navigation.PushAsync(new QuotesPage());
         }
     }
 }

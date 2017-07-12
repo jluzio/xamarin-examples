@@ -19,12 +19,12 @@ namespace GenericDev.StackLayout
 
         async private void OnExercise1ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise1());
+            await Navigation.PushAsync(new Exercise1());
         }
 
         async private void OnExercise2ButtonClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Exercise2());
+            await Navigation.PushAsync(new Exercise2());
         }
 
     }
