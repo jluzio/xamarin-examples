@@ -1,29 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:GenericDev"
-            xmlns:localStackLayout="clr-namespace:GenericDev.StackLayout"
-            xmlns:localGrid="clr-namespace:GenericDev.Grid"
-            xmlns:localAbsoluteLayout="clr-namespace:GenericDev.AbsoluteLayout"
-            xmlns:localRelativeLayout="clr-namespace:GenericDev.RelativeLayout"
-            xmlns:localBindings="clr-namespace:GenericDev.Binding"
-            xmlns:localImages="clr-namespace:GenericDev.Image"             
-            xmlns:localMisc="clr-namespace:GenericDev.Misc"
-            xmlns:localListView="clr-namespace:GenericDev.ListView"
-            x:Class="GenericDev.MainPage">
-    <!--Pages can be added as references or inline-->
-    <ContentPage Title="Home">
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label Text="Welcome!" FontSize="30" HorizontalTextAlignment="Center" />
-            <Label x:Name="systemInfoLabel" FontSize="20" HorizontalTextAlignment="Center" />
+            x:Class="GenericDev.MainPage"
+            Title="GenericDev">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Welcome!" FontSize="30" />
+            <Label x:Name="systemInfoLabel" FontSize="20" />
         </StackLayout>
-    </ContentPage>
-    <localMisc:Index Title="Misc" />
-    <localStackLayout:Index Title="Stack Layout" />
-    <localGrid:Index Title="Grid" />
-    <localAbsoluteLayout:Index Title="Absolute Layout" />
-    <localRelativeLayout:Index Title="Relative Layout" />
-    <localBindings:Index Title="Bindings" />
-    <localImages:Index Title="Images" />
-    <localListView:Index Title="List View" />
-</TabbedPage>
+        <StackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+            <ListView x:Name="pages" ItemSelected="pages_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
