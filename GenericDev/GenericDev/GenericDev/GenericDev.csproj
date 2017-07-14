@@ -40,86 +40,101 @@
     <Compile Include="Common\Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Common\MarkupExtensions\ImageFileExtension.cs" />
     <Compile Include="Common\MarkupExtensions\ImageResourceExtension.cs" />
-    <Compile Include="Views\AbsoluteLayout\CheckerBoardPage.xaml.cs">
+    <Compile Include="Views\AbsoluteLayoutVw\CheckerBoardPage.xaml.cs">
       <DependentUpon>CheckerBoardPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AbsoluteLayout\Exercise1.xaml.cs">
+    <Compile Include="Views\AbsoluteLayoutVw\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AbsoluteLayout\TestingValues.xaml.cs">
+    <Compile Include="Views\AbsoluteLayoutVw\TestingValues.xaml.cs">
       <DependentUpon>TestingValues.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AbsoluteLayout\Exercise2.xaml.cs">
+    <Compile Include="Views\AbsoluteLayoutVw\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppConstants.cs" />
-    <Compile Include="Views\Binding\BackwardsBindings.xaml.cs">
+    <Compile Include="Views\BindingVw\BackwardsBindings.xaml.cs">
       <DependentUpon>BackwardsBindings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\NavigationVw\Popups.xaml.cs">
+      <DependentUpon>Popups.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NavigationVw\ItemListPage.xaml.cs">
+      <DependentUpon>ItemListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NavigationVw\MasterDetailAsMainPage.xaml.cs">
+      <DependentUpon>MasterDetailAsMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NavigationVw\MasterDetailNavigationToPage.cs" />
+    <Compile Include="Views\NavigationVw\MasterDetailNavigationToModal.cs" />
+    <Compile Include="Views\NavigationVw\Models\Item.cs" />
+    <Compile Include="Views\NavigationVw\ToolbarItemsPage.xaml.cs">
+      <DependentUpon>ToolbarItemsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RouterPages.cs" />
-    <Compile Include="Views\Grid\Exercise1.xaml.cs">
+    <Compile Include="Views\GridVw\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Grid\Exercise2.xaml.cs">
+    <Compile Include="Views\GridVw\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image\EmbeddedImage.xaml.cs">
+    <Compile Include="Views\ImageVw\EmbeddedImage.xaml.cs">
       <DependentUpon>EmbeddedImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image\Exercise1.xaml.cs">
+    <Compile Include="Views\ImageVw\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image\ImageCirclePlugin.xaml.cs">
+    <Compile Include="Views\ImageVw\ImageCirclePlugin.xaml.cs">
       <DependentUpon>ImageCirclePlugin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image\LoadingIndicator.xaml.cs">
+    <Compile Include="Views\ImageVw\LoadingIndicator.xaml.cs">
       <DependentUpon>LoadingIndicator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image\LoadingIndicatorExternalImage.xaml.cs">
+    <Compile Include="Views\ImageVw\LoadingIndicatorExternalImage.xaml.cs">
       <DependentUpon>LoadingIndicatorExternalImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Image\LocalImage.xaml.cs">
+    <Compile Include="Views\ImageVw\LocalImage.xaml.cs">
       <DependentUpon>LocalImage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Common\RouterPage.xaml.cs">
+    <Compile Include="Views\CommonVw\RouterPage.xaml.cs">
       <DependentUpon>RouterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListView\Exercise1.xaml.cs">
+    <Compile Include="Views\ListViewVw\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ListView\Models\Search.cs" />
-    <Compile Include="Views\ListView\Models\SearchGroup.cs" />
-    <Compile Include="Views\ListView\Services\ISearchService.cs" />
-    <Compile Include="Views\ListView\Services\SearchService.cs" />
+    <Compile Include="Views\ListViewVw\Models\Search.cs" />
+    <Compile Include="Views\ListViewVw\Models\SearchGroup.cs" />
+    <Compile Include="Views\ListViewVw\Services\ISearchService.cs" />
+    <Compile Include="Views\ListViewVw\Services\SearchService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Misc\QuotesPage.xaml.cs">
+    <Compile Include="Views\MiscVw\QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Navigation\Carousel.xaml.cs">
+    <Compile Include="Views\NavigationVw\Carousel.xaml.cs">
       <DependentUpon>Carousel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Navigation\ItemDetail.xaml.cs">
-      <DependentUpon>ItemDetail.xaml</DependentUpon>
+    <Compile Include="Views\NavigationVw\ItemDetailPage.xaml.cs">
+      <DependentUpon>ItemDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Navigation\MasterDetail.xaml.cs">
+    <Compile Include="Views\NavigationVw\MasterDetail.xaml.cs">
       <DependentUpon>MasterDetail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Navigation\Tabs.xaml.cs">
+    <Compile Include="Views\NavigationVw\Tabs.xaml.cs">
       <DependentUpon>Tabs.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RelativeLayout\Exercise1.xaml.cs">
+    <Compile Include="Views\RelativeLayoutVw\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StackLayout\Exercise1.xaml.cs">
+    <Compile Include="Views\StackLayoutVw\Exercise1.xaml.cs">
       <DependentUpon>Exercise1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StackLayout\Exercise2.xaml.cs">
+    <Compile Include="Views\StackLayoutVw\Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -151,144 +166,168 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Misc\QuotesPage.xaml">
+    <EmbeddedResource Include="Views\MiscVw\QuotesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\StackLayout\Exercise1.xaml">
+    <EmbeddedResource Include="Views\StackLayoutVw\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\StackLayout\Exercise2.xaml">
+    <EmbeddedResource Include="Views\StackLayoutVw\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Grid\Exercise1.xaml">
+    <EmbeddedResource Include="Views\GridVw\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Grid\Exercise2.xaml">
+    <EmbeddedResource Include="Views\GridVw\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AbsoluteLayout\Exercise1.xaml">
+    <EmbeddedResource Include="Views\AbsoluteLayoutVw\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AbsoluteLayout\Exercise2.xaml">
+    <EmbeddedResource Include="Views\AbsoluteLayoutVw\Exercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AbsoluteLayout\CheckerBoardPage.xaml">
+    <EmbeddedResource Include="Views\AbsoluteLayoutVw\CheckerBoardPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\AbsoluteLayout\README.txt" />
-    <Content Include="Views\Image\ImageCirclePlugin.txt" />
+    <Content Include="Views\AbsoluteLayoutVw\README.txt" />
+    <Content Include="Views\ImageVw\ImageCirclePlugin.txt" />
     <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AbsoluteLayout\TestingValues.xaml">
+    <EmbeddedResource Include="Views\AbsoluteLayoutVw\TestingValues.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\RelativeLayout\Exercise1.xaml">
+    <EmbeddedResource Include="Views\RelativeLayoutVw\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Binding\BackwardsBindings.xaml">
+    <EmbeddedResource Include="Views\BindingVw\BackwardsBindings.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image\LoadingIndicatorExternalImage.xaml">
+    <EmbeddedResource Include="Views\ImageVw\LoadingIndicatorExternalImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image\LoadingIndicator.xaml">
+    <EmbeddedResource Include="Views\ImageVw\LoadingIndicator.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image\EmbeddedImage.xaml">
+    <EmbeddedResource Include="Views\ImageVw\EmbeddedImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image\LocalImage.xaml">
+    <EmbeddedResource Include="Views\ImageVw\LocalImage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image\ImageCirclePlugin.xaml">
+    <EmbeddedResource Include="Views\ImageVw\ImageCirclePlugin.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Image\Exercise1.xaml">
+    <EmbeddedResource Include="Views\ImageVw\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\ListView\Exercise1.xaml">
+    <EmbeddedResource Include="Views\ListViewVw\Exercise1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Navigation\Carousel.xaml">
+    <EmbeddedResource Include="Views\NavigationVw\Carousel.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Navigation\Tabs.xaml">
+    <EmbeddedResource Include="Views\NavigationVw\Tabs.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Navigation\MasterDetail.xaml">
+    <EmbeddedResource Include="Views\NavigationVw\MasterDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Navigation\ItemDetail.xaml">
+    <EmbeddedResource Include="Views\NavigationVw\ItemDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Common\RouterPage.xaml">
+    <EmbeddedResource Include="Views\CommonVw\RouterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NavigationVw\ItemListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NavigationVw\MasterDetailAsMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NavigationVw\Popups.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NavigationVw\ToolbarItemsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -18,7 +18,7 @@
             <ListView x:Name="pages" ItemSelected="pages_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Title}" />
+                        <TextCell Text="{Binding Title}" TextColor="{StaticResource Key=listViewTextColor}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

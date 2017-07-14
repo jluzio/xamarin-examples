@@ -18,6 +18,8 @@
                         Android=""
                         iOS=""
                         WinPhone="LocalImages" />
+            <Color x:Key="defaultTextColor">Black</Color>
+            <Color x:Key="listViewTextColor">Black</Color>
         </ResourceDictionary>
 
 	</Application.Resources>

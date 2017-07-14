@@ -6,126 +6,131 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-using GenericDev.Views.Common;
+using GenericDev.Views.CommonVw;
 
 namespace GenericDev.Views
 {
-    public class AbsoluteLayoutIndex : RouterPage
+    public class MiscVwIndex : RouterPage
     {
-        public AbsoluteLayoutIndex() : base()
-        {
-            Title = "Absolute Layout";
-            Pages.ItemsSource = new List<Page>
-            {
-                new GenericDev.Views.AbsoluteLayout.Exercise1(),
-                new GenericDev.Views.AbsoluteLayout.Exercise2(),
-                new GenericDev.Views.AbsoluteLayout.CheckerBoardPage(),
-                new GenericDev.Views.AbsoluteLayout.TestingValues()
-            };
-        }
-    }
-
-    public class BindingIndex : RouterPage
-    {
-        public BindingIndex() : base()
-        {
-            Title = "Binding";
-            Pages.ItemsSource = new List<Page>
-            {
-                new GenericDev.Views.Binding.BackwardsBindings(),
-            };
-        }
-    }
-
-    public class GridIndex : RouterPage
-    {
-        public GridIndex() : base()
-        {
-            Title = "Grid";
-            Pages.ItemsSource = new List<Page>
-            {
-                new GenericDev.Views.Grid.Exercise1(),
-                new GenericDev.Views.Grid.Exercise2(),
-            };
-        }
-    }
-
-    public class ImageIndex : RouterPage
-    {
-        public ImageIndex() : base()
-        {
-            Title = "Image";
-            Pages.ItemsSource = new List<Page>
-            {
-                new GenericDev.Views.Image.EmbeddedImage(),
-                new GenericDev.Views.Image.LocalImage(),
-                new GenericDev.Views.Image.LoadingIndicator(),
-                new GenericDev.Views.Image.LoadingIndicatorExternalImage(),
-                new GenericDev.Views.Image.ImageCirclePlugin(),
-                new GenericDev.Views.Image.Exercise1(),
-            };
-        }
-    }
-
-    public class ListViewIndex : RouterPage
-    {
-        public ListViewIndex() : base()
-        {
-            Title = "List View";
-            Pages.ItemsSource = new List<Page>
-            {
-                new GenericDev.Views.ListView.Exercise1(),
-            };
-        }
-    }
-
-    public class MiscIndex : RouterPage
-    {
-        public MiscIndex() : base()
+        public MiscVwIndex() : base()
         {
             Title = "Misc";
             Pages.ItemsSource = new List<Page>
             {
-                new GenericDev.Views.Misc.QuotesPage(),
+                new GenericDev.Views.MiscVw.QuotesPage(),
             };
         }
     }
 
-    public class NavigationIndex : RouterPage
+    public class BindingVwIndex : RouterPage
     {
-        public NavigationIndex() : base()
+        public BindingVwIndex() : base()
         {
-            Title = "Navigation";
+            Title = "Binding";
             Pages.ItemsSource = new List<Page>
             {
-                new GenericDev.Views.Navigation.Tabs(),
-                new GenericDev.Views.Navigation.Carousel(),
-                new GenericDev.Views.Navigation.MasterDetail(),
+                new GenericDev.Views.BindingVw.BackwardsBindings(),
             };
         }
     }
 
-    public class RelativeLayoutIndex : RouterPage
+    public class StackLayoutVwIndex : RouterPage
     {
-        public RelativeLayoutIndex() : base()
-        {
-            Title = "Relative Layout";
-            Pages.ItemsSource = new List<Page>
-            {
-                new GenericDev.Views.RelativeLayout.Exercise1(),
-            };
-        }
-    }
-
-    public class StackLayoutIndex : RouterPage
-    {
-        public StackLayoutIndex() : base()
+        public StackLayoutVwIndex() : base()
         {
             Title = "Stack Layout";
             Pages.ItemsSource = new List<Page>
             {
-                new GenericDev.Views.StackLayout.Exercise1(),
-                new GenericDev.Views.StackLayout.Exercise2(),
+                new GenericDev.Views.StackLayoutVwVw.Exercise1(),
+                new GenericDev.Views.StackLayoutVwVw.Exercise2(),
+            };
+        }
+    }
+
+    public class AbsoluteLayoutVwIndex : RouterPage
+    {
+        public AbsoluteLayoutVwIndex() : base()
+        {
+            Title = "Absolute Layout";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.AbsoluteLayoutVw.Exercise1(),
+                new GenericDev.Views.AbsoluteLayoutVw.Exercise2(),
+                new GenericDev.Views.AbsoluteLayoutVw.CheckerBoardPage(),
+                new GenericDev.Views.AbsoluteLayoutVw.TestingValues()
+            };
+        }
+    }
+
+    public class GridVwIndex : RouterPage
+    {
+        public GridVwIndex() : base()
+        {
+            Title = "Grid";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.GridVw.Exercise1(),
+                new GenericDev.Views.GridVw.Exercise2(),
+            };
+        }
+    }
+
+    public class RelativeLayoutVwIndex : RouterPage
+    {
+        public RelativeLayoutVwIndex() : base()
+        {
+            Title = "Relative Layout";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.RelativeLayoutVw.Exercise1(),
+            };
+        }
+    }
+
+    public class ImageVwIndex : RouterPage
+    {
+        public ImageVwIndex() : base()
+        {
+            Title = "Image";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.ImageVw.EmbeddedImage(),
+                new GenericDev.Views.ImageVw.LocalImage(),
+                new GenericDev.Views.ImageVw.LoadingIndicator(),
+                new GenericDev.Views.ImageVw.LoadingIndicatorExternalImage(),
+                new GenericDev.Views.ImageVw.ImageCirclePlugin(),
+                new GenericDev.Views.ImageVw.Exercise1(),
+            };
+        }
+    }
+
+    public class ListViewVwIndex : RouterPage
+    {
+        public ListViewVwIndex() : base()
+        {
+            Title = "List View";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.ListViewVw.Exercise1(),
+            };
+        }
+    }
+
+    public class NavigationVwIndex : RouterPage
+    {
+        public NavigationVwIndex() : base()
+        {
+            Title = "Navigation";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.NavigationVw.Tabs(),
+                new GenericDev.Views.NavigationVw.Carousel(),
+                new GenericDev.Views.NavigationVw.MasterDetail(),
+                new GenericDev.Views.NavigationVw.MasterDetailAsMainPage(),
+                new GenericDev.Views.NavigationVw.MasterDetailNavigateToPage(),
+                new GenericDev.Views.NavigationVw.MasterDetailNavigateToModal(),
+                new GenericDev.Views.NavigationVw.Popups(),
+                new GenericDev.Views.NavigationVw.ToolbarItemsPage()
             };
         }
     }

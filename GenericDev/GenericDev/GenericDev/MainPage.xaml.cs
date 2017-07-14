@@ -17,15 +17,15 @@ namespace GenericDev
 
             var pageItemsSource = new List<Page>
             {
-                new GenericDev.Views.MiscIndex(),
-                new GenericDev.Views.BindingIndex(),
-                new GenericDev.Views.StackLayoutIndex(),
-                new GenericDev.Views.AbsoluteLayoutIndex(),
-                new GenericDev.Views.GridIndex(),
-                new GenericDev.Views.RelativeLayoutIndex(),
-                new GenericDev.Views.ImageIndex(),
-                new GenericDev.Views.ListViewIndex(),
-                new GenericDev.Views.NavigationIndex(),
+                new GenericDev.Views.MiscVwIndex(),
+                new GenericDev.Views.BindingVwIndex(),
+                new GenericDev.Views.StackLayoutVwIndex(),
+                new GenericDev.Views.AbsoluteLayoutVwIndex(),
+                new GenericDev.Views.GridVwIndex(),
+                new GenericDev.Views.RelativeLayoutVwIndex(),
+                new GenericDev.Views.ImageVwIndex(),
+                new GenericDev.Views.ListViewVwIndex(),
+                new GenericDev.Views.NavigationVwIndex(),
             };
             pages.ItemsSource = pageItemsSource;
 
@@ -43,8 +43,12 @@ namespace GenericDev
 
         async private void pages_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var page= e.SelectedItem as Page;
-            await Navigation.PushAsync(page);
+            var page = e.SelectedItem as Page;
+            if (page != null)
+            {
+                await Navigation.PushAsync(page);
+                pages.SelectedItem = null;
+            }
         }
     }
 }
