@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.Views.FormsVw.FormElements"
+             Title="Form Elements">
+    <ContentPage.Content>
+        <StackLayout>
+            <Switch x:Name="switch" IsToggled="True" />
+            <Label Text="Switch content" IsVisible="{Binding IsToggled, Source={x:Reference switch}}" />
+            <Slider x:Name="slider" Maximum="100" Minimum="10" />
+            <Label Text="{Binding Value, Source={x:Reference slider}}" />
+            <Stepper x:Name="stepper" Maximum="100" Minimum="10" Increment="2" />
+            <Label Text="{Binding Value, Source={x:Reference stepper}}" />
+            <Label Text="--- Entries ---" />
+            <Entry Keyboard="Telephone" Placeholder="Phone" />
+            <Entry Keyboard="Text" Placeholder="Password" IsPassword="True" />
+            <Entry Keyboard="Email" Placeholder="Email" />
+            <Entry Keyboard="Url" Placeholder="Url" />
+            <Label Text="--- Editor ---" />
+            <Editor BackgroundColor="Aqua" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

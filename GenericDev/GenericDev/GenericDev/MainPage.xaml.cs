@@ -26,6 +26,7 @@ namespace GenericDev
                 new GenericDev.Views.ImageVwIndex(),
                 new GenericDev.Views.ListViewVwIndex(),
                 new GenericDev.Views.NavigationVwIndex(),
+                new GenericDev.Views.FormsVwIndex(),
             };
             pages.ItemsSource = pageItemsSource;
 

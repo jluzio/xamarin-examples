@@ -135,4 +135,16 @@ namespace GenericDev.Views
         }
     }
 
+    public class FormsVwIndex : RouterPage
+    {
+        public FormsVwIndex() : base()
+        {
+            Title = "Forms";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.FormsVw.FormElements(),
+            };
+        }
+    }
+
 }
