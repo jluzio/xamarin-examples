@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="GenericDev.Views.FormsVw.PickerElements"
+             Title="Pickers">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Simple Picker: " />
+            <Picker x:Name="simplePicker" SelectedIndexChanged="simplePicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>SMS</x:String>
+                    <x:String>Mail</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Picker: " />
+            <Picker x:Name="picker" 
+                    ItemsSource="{Binding Monkeys}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedIndexChanged="picker_SelectedIndexChanged">
+            </Picker>
+            <Label Text="Date Picker: " />
+            <DatePicker x:Name="datePicker1"
+                        Date="2 Jan 2017" 
+                        Format="dd MM yyyy"                         
+                        MaximumDate="1 Jan 2018" 
+                        MinimumDate="1 Jan 2016"
+                        DateSelected="datePicker_DateSelected"
+                        />
+            <DatePicker x:Name="datePicker2"
+                        Date="{Static sys:DateTime.Today}" 
+                        Format="dd MM yyyy"                         
+                        DateSelected="datePicker_DateSelected"
+                        />
+            <TimePicker x:Name="timePicker"
+                        Time="14:14"                        
+                        />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

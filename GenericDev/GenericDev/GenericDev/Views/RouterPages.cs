@@ -143,6 +143,7 @@ namespace GenericDev.Views
             Pages.ItemsSource = new List<Page>
             {
                 new GenericDev.Views.FormsVw.FormElements(),
+                new GenericDev.Views.FormsVw.PickerElements(),
             };
         }
     }
