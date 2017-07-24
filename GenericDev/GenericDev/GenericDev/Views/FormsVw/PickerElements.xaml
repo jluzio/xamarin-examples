@@ -35,6 +35,7 @@
             <TimePicker x:Name="timePicker"
                         Time="14:14"                        
                         />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

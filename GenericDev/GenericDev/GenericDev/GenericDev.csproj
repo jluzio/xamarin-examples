@@ -59,11 +59,21 @@
     <Compile Include="Views\BindingVw\BackwardsBindings.xaml.cs">
       <DependentUpon>BackwardsBindings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExtensionsVw\DateCell.xaml.cs">
+      <DependentUpon>DateCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormsVw\FormElements.xaml.cs">
       <DependentUpon>FormElements.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\FormsVw\Monkey.cs" />
+    <Compile Include="Views\FormsVw\MonkeysPickerListViewPage.xaml.cs">
+      <DependentUpon>MonkeysPickerListViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormsVw\PickerElements.xaml.cs">
       <DependentUpon>PickerElements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormsVw\TableViewPage.xaml.cs">
+      <DependentUpon>TableViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NavigationVw\Popups.xaml.cs">
       <DependentUpon>Popups.xaml</DependentUpon>
@@ -346,6 +356,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\FormsVw\PickerElements.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\FormsVw\TableViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ExtensionsVw\DateCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\FormsVw\MonkeysPickerListViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
