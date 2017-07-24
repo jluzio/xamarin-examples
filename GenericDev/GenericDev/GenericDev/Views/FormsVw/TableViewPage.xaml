@@ -22,7 +22,7 @@
                 </TableSection>
                 <TableSection Title="ListView Select with Nav">
                     <ViewCell x:Name="monkeyCell" Tapped="monkeyCell_Tapped">
-                        <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Padding="13, 0">
                             <Label Text="Monkey" />
                             <Label x:Name="monkeyLabel" Text="(selected monkey)" HorizontalOptions="EndAndExpand" />
                         </StackLayout>

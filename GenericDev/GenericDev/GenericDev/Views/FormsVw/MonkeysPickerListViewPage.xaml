@@ -6,7 +6,7 @@
         <ListView x:Name="listView">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Name}" />
+                    <TextCell Text="{Binding Name}" TextColor="{StaticResource defaultTextColor}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
