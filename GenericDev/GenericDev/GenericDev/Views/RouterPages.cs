@@ -145,6 +145,7 @@ namespace GenericDev.Views
                 new GenericDev.Views.FormsVw.FormElements(),
                 new GenericDev.Views.FormsVw.PickerElements(),
                 new GenericDev.Views.FormsVw.TableViewPage(),
+                new GenericDev.Views.FormsVw.Exercise1.Exercise1(),
             };
         }
     }
