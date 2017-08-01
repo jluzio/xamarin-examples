@@ -5,18 +5,7 @@
              Title="Exercise 1">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="contacts">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding FirstName}" />
-                                <Label Text="{Binding LastName}" />
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Button x:Name="startBtn" Text="Start" Clicked="startBtn_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

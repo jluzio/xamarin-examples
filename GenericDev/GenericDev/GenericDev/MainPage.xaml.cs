@@ -17,6 +17,7 @@ namespace GenericDev
 
             var pageItemsSource = new List<Page>
             {
+                new GenericDev.Views.CurrentVwIndex(),
                 new GenericDev.Views.MiscVwIndex(),
                 new GenericDev.Views.BindingVwIndex(),
                 new GenericDev.Views.StackLayoutVwIndex(),
