@@ -21,24 +21,23 @@ namespace GenericDev.Views.FormsVw.Exercise1
             InitializeComponent();
         }
 
-
         async private void saveBtn_Clicked(object sender, EventArgs e)
         {
             var contact = BindingContext as Contact;
-            if (String.IsNullOrEmpty(contact.FirstName) || String.IsNullOrEmpty(contact.LastName))
+            if (String.IsNullOrEmpty(contact.FirstName) && String.IsNullOrEmpty(contact.LastName))
             {
                 await DisplayAlert("Validation failed", "Please enter the name", "OK");
             }
             else
             {
-                await Navigation.PopAsync();
                 if (contact.Id == null)
                 {
-                    ContactAdd.Invoke(this, contact);
+                    ContactAdd?.Invoke(this, contact);
                 } else
                 {
-                    ContactUpdate.Invoke(this, contact);
+                    ContactUpdate?.Invoke(this, contact);
                 }
+                await Navigation.PopAsync();
             }
         }
     }

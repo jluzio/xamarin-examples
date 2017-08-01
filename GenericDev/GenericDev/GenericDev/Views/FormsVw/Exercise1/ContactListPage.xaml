@@ -9,14 +9,17 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="contactListView" SeparatorVisibility="None" ItemSelected="contactListView_ItemSelected">
+            <ListView x:Name="contactListView"
+                      ItemSelected="contactListView_ItemSelected"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell x:Name="contactRow" Tapped="contactRow_Tapped">
                             <ViewCell.ContextActions>
                                 <MenuItem x:Name="deleteBtn" 
-                                          IsDestructive="True" 
-                                          Clicked="deleteBtn_Clicked" CommandParameter="{Binding .}" />
+                                          Clicked="deleteBtn_Clicked" CommandParameter="{Binding .}"
+                                          IsDestructive="True" />
                             </ViewCell.ContextActions>
                             <ContentView Padding="5">
                                 <Frame Padding="10" OutlineColor="Black">
