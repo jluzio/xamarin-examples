@@ -14,7 +14,9 @@
                     <DataTemplate>
                         <ViewCell x:Name="contactRow" Tapped="contactRow_Tapped">
                             <ViewCell.ContextActions>
-                                <MenuItem x:Name="deleteBtn" CommandParameter="{Binding .}" Clicked="deleteBtn_Clicked" />
+                                <MenuItem x:Name="deleteBtn" 
+                                          IsDestructive="True" 
+                                          Clicked="deleteBtn_Clicked" CommandParameter="{Binding .}" />
                             </ViewCell.ContextActions>
                             <ContentView Padding="5">
                                 <Frame Padding="10" OutlineColor="Black">
