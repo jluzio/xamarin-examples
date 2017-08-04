@@ -256,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\AbsoluteLayoutVw\README.txt" />
+    <Content Include="Views\DataAccessVw\FileStorage.README.txt" />
     <Content Include="Views\ImageVw\ImageCirclePlugin.txt" />
     <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
