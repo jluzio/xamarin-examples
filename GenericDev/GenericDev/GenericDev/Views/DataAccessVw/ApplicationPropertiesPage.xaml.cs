@@ -13,11 +13,16 @@ namespace GenericDev.Views.DataAccessVw
     {
         public String Title { get; set; }
         public bool NotificationsEnabled { get; set; }
+        public bool OnChangeEnabled { get; set; } = true;
+        public bool OnLeavePageEnabled { get; set; } = true;
     }
+
     public class Keys
     {
-        public static String TITLE = "Title";
-        public static String NOTIFICATIONS_ENABLED = "NotificationsEnabled";
+        public static String Title = "Title";
+        public static String NotificationsEnabled = "NotificationsEnabled";
+        public static String OnChangeEnabled = "OnChangeEnabled";
+        public static String OnLeavePageEnabled = "OnLeavePageEnabled";
     }
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -35,15 +40,21 @@ namespace GenericDev.Views.DataAccessVw
 
         private void OnChange(object sender, EventArgs e)
         {
-            // saves on property change
-            SaveProperties(Settings);
+            if (Settings.OnChangeEnabled)
+            {
+                // saves on property change
+                SaveProperties(Settings);
+            }
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            // save on page leave
-            SaveProperties(Settings);
+            if (Settings.OnLeavePageEnabled)
+            {
+                // save on page leave
+                SaveProperties(Settings);
+            }
         }
 
         private Settings LoadProperties()
@@ -51,18 +62,25 @@ namespace GenericDev.Views.DataAccessVw
             var props = Application.Current.Properties;
 
             var settings = new Settings();
-            if (props.ContainsKey(Keys.TITLE))
-                settings.Title = (String)props[Keys.TITLE];
-            if (props.ContainsKey(Keys.NOTIFICATIONS_ENABLED))
-                settings.NotificationsEnabled = (bool)props[Keys.NOTIFICATIONS_ENABLED];
+            if (props.ContainsKey(Keys.Title))
+                settings.Title = (String)props[Keys.Title];
+            if (props.ContainsKey(Keys.NotificationsEnabled))
+                settings.NotificationsEnabled = (bool)props[Keys.NotificationsEnabled];
+            if (props.ContainsKey(Keys.OnChangeEnabled))
+                settings.OnChangeEnabled = (bool)props[Keys.OnChangeEnabled];
+            if (props.ContainsKey(Keys.OnLeavePageEnabled))
+                settings.OnLeavePageEnabled = (bool)props[Keys.OnLeavePageEnabled];
             return settings;
         }
 
         private void SaveProperties(Settings settings)
         {
             var props = Application.Current.Properties;
-            props[Keys.TITLE] = settings.Title;
-            props[Keys.NOTIFICATIONS_ENABLED] = settings.Title;
+
+            props[Keys.Title] = settings.Title;
+            props[Keys.NotificationsEnabled] = settings.NotificationsEnabled;
+            props[Keys.OnChangeEnabled] = settings.OnChangeEnabled;
+            props[Keys.OnLeavePageEnabled] = settings.OnLeavePageEnabled;
 
             // Saves on application sleep or closing
             // to save immediately use the following:

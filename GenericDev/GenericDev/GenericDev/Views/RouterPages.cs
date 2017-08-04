@@ -10,6 +10,20 @@ using GenericDev.Views.CommonVw;
 
 namespace GenericDev.Views
 {
+    public class CurrentVwIndex : RouterPage
+    {
+        public CurrentVwIndex() : base()
+        {
+            Title = "Current";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.DataAccessVw.ApplicationPropertiesPage(),
+                new GenericDev.Views.FormsVw.Exercise1.ContactListPage(),
+            };
+        }
+    }
+
+
     public class MiscVwIndex : RouterPage
     {
         public MiscVwIndex() : base()

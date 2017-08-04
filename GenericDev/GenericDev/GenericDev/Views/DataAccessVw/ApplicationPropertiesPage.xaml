@@ -8,8 +8,20 @@
             <TableView Intent="Form">
                 <TableRoot>
                     <TableSection>
-                        <EntryCell x:Name="title" Label="Title" Text="{Binding Title}" Completed="OnChange" />
-                        <SwitchCell x:Name="notificationsEnabled" Text="Notifications" On="{Binding NotificationEnabled}" />
+                        <EntryCell x:Name="title" 
+                                   Label="Title" Text="{Binding Title}" Placeholder="(eg Title)"
+                                   Completed="OnChange" />
+                        <SwitchCell x:Name="notificationsEnabled" 
+                                    Text="Notifications" On="{Binding NotificationEnabled}" 
+                                    OnChanged="OnChange" />
+                    </TableSection>
+                    <TableSection Title="Save when">
+                        <SwitchCell x:Name="onChangedEnabled" 
+                                    Text="On Change" On="{Binding OnChangeEnabled}" 
+                                    OnChanged="OnChange" />
+                        <SwitchCell x:Name="onLeavePageEnabled" 
+                                    Text="On Leave Page" On="{Binding OnLeavePageEnabled}" 
+                                    OnChanged="OnChange" />
                     </TableSection>
                 </TableRoot>
             </TableView>

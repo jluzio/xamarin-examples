@@ -17,12 +17,12 @@ namespace GenericDev.Views.FormsVw.Exercise1
 		public Exercise1 ()
 		{
 			InitializeComponent ();
-
-            contacts.ItemsSource = new List<Contact>
-            {
-                new Contact { FirstName = "John", LastName = "Doe", Email = "john.doe@server.org"},
-                new Contact { FirstName = "Jane", LastName = "Moe", Email = "jone.moe@server.org"},
-            };
 		}
-	}
+
+        private void startBtn_Clicked(object sender, EventArgs e)
+        {
+            //Application.Current.MainPage = new NavigationPage(new ContactListPage());
+            Navigation.PushAsync(new ContactListPage());
+        }
+    }
 }

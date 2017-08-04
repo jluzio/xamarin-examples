@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GenericDev.MarkupExtensions"
+             x:Class="GenericDev.Views.FormsVw.Exercise1.ContactListPage"
+             Title="Contacts">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="addBtn" Text="Add" Clicked="addBtn_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="contactListView"
+                      ItemSelected="contactListView_ItemSelected"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell x:Name="contactRow" Tapped="contactRow_Tapped">
+                            <ViewCell.ContextActions>
+                                <MenuItem x:Name="deleteBtn" 
+                                          Clicked="deleteBtn_Clicked" CommandParameter="{Binding .}"
+                                          IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <ContentView Padding="5">
+                                <Frame Padding="10" OutlineColor="Black">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding FirstName}" />
+                                        <Label Text="{Binding LastName}" />
+                                    </StackLayout>
+                                </Frame>
+                            </ContentView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
