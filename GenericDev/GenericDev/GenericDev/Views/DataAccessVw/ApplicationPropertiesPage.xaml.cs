@@ -19,10 +19,10 @@ namespace GenericDev.Views.DataAccessVw
 
     public class Keys
     {
-        public static String Title = "Title";
-        public static String NotificationsEnabled = "NotificationsEnabled";
-        public static String OnChangeEnabled = "OnChangeEnabled";
-        public static String OnLeavePageEnabled = "OnLeavePageEnabled";
+        public const String Title = "Title";
+        public const String NotificationsEnabled = "NotificationsEnabled";
+        public const String OnChangeEnabled = "OnChangeEnabled";
+        public const String OnLeavePageEnabled = "OnLeavePageEnabled";
     }
 
     [XamlCompilation(XamlCompilationOptions.Compile)]

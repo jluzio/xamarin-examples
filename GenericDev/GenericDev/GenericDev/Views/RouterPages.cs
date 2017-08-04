@@ -17,7 +17,6 @@ namespace GenericDev.Views
             Title = "Current";
             Pages.ItemsSource = new List<Page>
             {
-                new GenericDev.Views.DataAccessVw.ApplicationPropertiesPage(),
                 new GenericDev.Views.FormsVw.Exercise1.ContactListPage(),
             };
         }
@@ -173,6 +172,8 @@ namespace GenericDev.Views
             Pages.ItemsSource = new List<Page>
             {
                 new GenericDev.Views.DataAccessVw.ApplicationPropertiesPage(),
+                new GenericDev.Views.DataAccessVw.ApplicationPropertiesV2Page(),
+                new GenericDev.Views.DataAccessVw.FileStoragePage(),
             };
         }
     }
