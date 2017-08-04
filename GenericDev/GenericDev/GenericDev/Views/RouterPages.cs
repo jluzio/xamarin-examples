@@ -150,4 +150,17 @@ namespace GenericDev.Views
         }
     }
 
+
+    public class DataAccessVwIndex : RouterPage
+    {
+        public DataAccessVwIndex() : base()
+        {
+            Title = "Data Access";
+            Pages.ItemsSource = new List<Page>
+            {
+                new GenericDev.Views.DataAccessVw.ApplicationPropertiesPage(),
+            };
+        }
+    }
+
 }
