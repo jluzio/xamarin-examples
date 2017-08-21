@@ -174,6 +174,7 @@ namespace GenericDev.Views
                 new GenericDev.Views.DataAccessVw.ApplicationPropertiesPage(),
                 new GenericDev.Views.DataAccessVw.ApplicationPropertiesV2Page(),
                 new GenericDev.Views.DataAccessVw.FileStoragePage(),
+                new GenericDev.Views.DataAccessVw.SQLiteExamplePage(),
             };
         }
     }

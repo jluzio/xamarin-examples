@@ -28,6 +28,8 @@ namespace GenericDev.Droid
 		{
 			global::PCLStorage.Resource.String.ApplicationName = global::GenericDev.Droid.Resource.String.ApplicationName;
 			global::PCLStorage.Resource.String.Hello = global::GenericDev.Droid.Resource.String.Hello;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::GenericDev.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::GenericDev.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::GenericDev.Droid.Resource.Attribute.actionBarSize;
 		}
 		
