@@ -44,6 +44,8 @@
     <Compile Include="Persistence\ConnectionFactory.cs" />
     <Compile Include="Persistence\DatabaseTest.cs" />
     <Compile Include="Persistence\ISQLitePlatformFactory.cs" />
+    <Compile Include="Persistence\Recipe.cs" />
+    <Compile Include="Persistence\RecipeRepository.cs" />
     <Compile Include="Views\AbsoluteLayoutVw\CheckerBoardPage.xaml.cs">
       <DependentUpon>CheckerBoardPage.xaml</DependentUpon>
     </Compile>

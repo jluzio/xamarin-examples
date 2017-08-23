@@ -5,7 +5,18 @@
              Title="SQLite Example">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="addBtn" Text="Add" Clicked="addBtn_Clicked" />
+                <Button x:Name="updateBtn" Text="Update" Clicked="updateBtn_Clicked" />
+                <Button x:Name="removeBtn" Text="Remove" Clicked="removeBtn_Clicked" />
+            </StackLayout>
+            <ListView x:Name="recipeList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" TextColor="Black" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
