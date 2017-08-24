@@ -26,6 +26,7 @@ namespace GenericDev.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::ModernHttpClient.Resource.String.library_name = global::GenericDev.Droid.Resource.String.library_name;
 			global::PCLStorage.Resource.String.ApplicationName = global::GenericDev.Droid.Resource.String.ApplicationName;
 			global::PCLStorage.Resource.String.Hello = global::GenericDev.Droid.Resource.String.Hello;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::GenericDev.Droid.Resource.String.ApplicationName;
@@ -3745,6 +3746,9 @@ namespace GenericDev.Droid
 			
 			// aapt resource value: 0x7f07003a
 			public const int character_counter_pattern = 2131165242;
+			
+			// aapt resource value: 0x7f070040
+			public const int library_name = 2131165248;
 			
 			// aapt resource value: 0x7f070002
 			public const int mr_button_content_description = 2131165186;

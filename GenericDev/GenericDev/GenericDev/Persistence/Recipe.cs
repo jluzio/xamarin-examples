@@ -27,11 +27,6 @@ namespace GenericDev.Persistence
         [MaxLength(250)]
         public String Description { get; set; }
 
-        private void OnPropertyChanged([CallerMemberName] String propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
         protected bool SetField<T>(ref T field, T value, [CallerMemberName] String propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(field, value)) return false;
@@ -39,5 +34,11 @@ namespace GenericDev.Persistence
             OnPropertyChanged(propertyName);
             return true;
         }
+
+        private void OnPropertyChanged(String propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
     }
 }
