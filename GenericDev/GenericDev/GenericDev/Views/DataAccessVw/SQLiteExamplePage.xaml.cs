@@ -41,16 +41,16 @@ namespace GenericDev.Views.DataAccessVw
         {
             var recipe = new Recipe { Name = "Recipe " + DateTime.Now.Ticks };
             await recipeRepository.Insert(recipe);
-            LoadRecipes();
+            recipes.Add(recipe);
         }
 
         private async void updateBtn_Clicked(object sender, EventArgs e)
         {
             var recipe = recipeList.SelectedItem as Recipe;
+            recipe.Name = "Recipe Updated " + DateTime.Now.Ticks;
             if (recipe != null)
             {
-                await recipeRepository.InsertOrReplace(recipe);
-                LoadRecipes();
+                await recipeRepository.Update(recipe);
             }
         }
 
@@ -60,7 +60,7 @@ namespace GenericDev.Views.DataAccessVw
             if (recipe != null)
             {
                 await recipeRepository.Delete(recipe);
-                LoadRecipes();
+                recipes.Remove(recipe);
             }
         }
     }

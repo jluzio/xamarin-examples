@@ -32,6 +32,11 @@ namespace GenericDev.Persistence
             await connection.InsertAsync(recipe);
         }
 
+        public async Task Update(Recipe recipe)
+        {
+            await connection.UpdateAsync(recipe);
+        }
+
         public async Task InsertOrReplace(Recipe recipe)
         {
             await connection.InsertOrReplaceAsync(recipe);
