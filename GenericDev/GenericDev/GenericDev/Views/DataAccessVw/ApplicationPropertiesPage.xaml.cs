@@ -11,7 +11,7 @@ namespace GenericDev.Views.DataAccessVw
 {
     public class Settings
     {
-        public String Title { get; set; }
+        public string Title { get; set; }
         public bool NotificationsEnabled { get; set; }
         public bool OnChangeEnabled { get; set; } = true;
         public bool OnLeavePageEnabled { get; set; } = true;
@@ -19,10 +19,10 @@ namespace GenericDev.Views.DataAccessVw
 
     public class Keys
     {
-        public const String Title = "Title";
-        public const String NotificationsEnabled = "NotificationsEnabled";
-        public const String OnChangeEnabled = "OnChangeEnabled";
-        public const String OnLeavePageEnabled = "OnLeavePageEnabled";
+        public const string Title = "Title";
+        public const string NotificationsEnabled = "NotificationsEnabled";
+        public const string OnChangeEnabled = "OnChangeEnabled";
+        public const string OnLeavePageEnabled = "OnLeavePageEnabled";
     }
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -63,7 +63,7 @@ namespace GenericDev.Views.DataAccessVw
 
             var settings = new Settings();
             if (props.ContainsKey(Keys.Title))
-                settings.Title = (String)props[Keys.Title];
+                settings.Title = (string)props[Keys.Title];
             if (props.ContainsKey(Keys.NotificationsEnabled))
                 settings.NotificationsEnabled = (bool)props[Keys.NotificationsEnabled];
             if (props.ContainsKey(Keys.OnChangeEnabled))

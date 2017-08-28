@@ -11,23 +11,23 @@ namespace GenericDev.Persistence
 {
     public class Recipe : INotifyPropertyChanged
     {
-        private String name;
+        private string name;
         public event PropertyChangedEventHandler PropertyChanged;
 
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
         [MaxLength(100)]
-        public String Name
+        public string Name
         {
             get { return name;  }
             set { SetField(ref name, value); }
         }
 
         [MaxLength(250)]
-        public String Description { get; set; }
+        public string Description { get; set; }
 
-        protected bool SetField<T>(ref T field, T value, [CallerMemberName] String propertyName = null)
+        protected bool SetField<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(field, value)) return false;
             field = value;
@@ -35,7 +35,7 @@ namespace GenericDev.Persistence
             return true;
         }
 
-        private void OnPropertyChanged(String propertyName)
+        private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

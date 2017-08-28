@@ -11,13 +11,13 @@ namespace GenericDev.Views.DataAccessVw
 {
     public class KeysV2
     {
-        public const String Title = "Title";
-        public const String NotificationsEnabled = "NotificationsEnabled";
+        public const string Title = "Title";
+        public const string NotificationsEnabled = "NotificationsEnabled";
     }
 
     public class SettingsV2
     {
-        public String Title
+        public string Title
         {
             get
             {
@@ -41,7 +41,7 @@ namespace GenericDev.Views.DataAccessVw
             }
         }
 
-        public static T GetProperty<T>(String key, T defaultValue)
+        public static T GetProperty<T>(string key, T defaultValue)
         {
             var props = Application.Current.Properties;
             if (props.ContainsKey(key))
@@ -51,7 +51,7 @@ namespace GenericDev.Views.DataAccessVw
             return defaultValue;
         }
 
-        public static void SetProperty(String key, Object value)
+        public static void SetProperty(string key, Object value)
         {
             Application.Current.Properties[key] = value;
         }

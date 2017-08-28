@@ -13,8 +13,8 @@ namespace GenericDev.Views.DataAccessVw
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FileStoragePage : ContentPage
     {
-        private String folderName = "MySubFolder";
-        private String fileName = "answer.txt";
+        private string folderName = "MySubFolder";
+        private string fileName = "answer.txt";
 
         public FileStoragePage()
         {

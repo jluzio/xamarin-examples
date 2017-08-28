@@ -25,6 +25,7 @@ namespace GenericDev.Views.ImageVw
             loadingIndicator.IsVisible = true;
             await Task.Delay(10000);
             loadingIndicator.IsRunning = false;
+            loadingIndicator.IsVisible = false;
             BackgroundColor = Color.Green;
             System.Diagnostics.Debug.WriteLine("loadData() done!");
         }

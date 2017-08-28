@@ -176,6 +176,7 @@ namespace GenericDev.Views
                 new GenericDev.Views.DataAccessVw.FileStoragePage(),
                 new GenericDev.Views.DataAccessVw.SQLiteExamplePage(),
                 new GenericDev.Views.DataAccessVw.RestServicePage(),
+                new GenericDev.Views.DataAccessVw.Exercise1.MoviesPage(),
             };
         }
     }

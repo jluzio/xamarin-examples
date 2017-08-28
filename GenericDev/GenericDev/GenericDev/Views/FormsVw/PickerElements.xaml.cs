@@ -35,7 +35,7 @@ namespace GenericDev.Views.FormsVw
 
         private void simplePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selected = simplePicker.SelectedItem as String;
+            var selected = simplePicker.SelectedItem as string;
             DisplayAlert("Selection", selected, "OK");
         }
 

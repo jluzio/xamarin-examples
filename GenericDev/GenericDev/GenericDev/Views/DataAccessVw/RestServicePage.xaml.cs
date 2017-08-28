@@ -18,7 +18,7 @@ namespace GenericDev.Views.DataAccessVw
     public class Post : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private String title;
+        private string title;
 
         public int UserId { get; set; }
         public int Id { get; set; }
@@ -29,7 +29,7 @@ namespace GenericDev.Views.DataAccessVw
             set { SetField(ref title, value); }
         }
  
-        protected bool SetField<T>(ref T field, T value, [CallerMemberName] String propertyName = null)
+        protected bool SetField<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(field, value)) return false;
             field = value;
@@ -37,7 +37,7 @@ namespace GenericDev.Views.DataAccessVw
             return true;
         }
 
-        private void OnPropertyChanged(String propertyName)
+        private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
@@ -47,7 +47,7 @@ namespace GenericDev.Views.DataAccessVw
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RestServicePage : ContentPage
     {
-        private String resourcesUrl = "https://jsonplaceholder.typicode.com/posts";
+        private string resourcesUrl = "https://jsonplaceholder.typicode.com/posts";
         private ObservableCollection<Post> posts;
         private HttpClient httpClient = new HttpClient(new NativeMessageHandler());
 
@@ -64,7 +64,7 @@ namespace GenericDev.Views.DataAccessVw
 
         private async void LoadPosts()
         {
-            String content = await httpClient.GetStringAsync(resourcesUrl);
+            string content = await httpClient.GetStringAsync(resourcesUrl);
             var loadedPosts = JsonConvert.DeserializeObject<List<Post>>(content);
             posts = new ObservableCollection<Post>(loadedPosts);
             listView.ItemsSource = posts;

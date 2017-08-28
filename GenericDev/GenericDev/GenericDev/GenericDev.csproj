@@ -71,6 +71,14 @@
     <Compile Include="Views\DataAccessVw\ApplicationPropertiesPage.xaml.cs">
       <DependentUpon>ApplicationPropertiesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DataAccessVw\Exercise1\Models\Movie.cs" />
+    <Compile Include="Views\DataAccessVw\Exercise1\MovieDetailsPage.xaml.cs">
+      <DependentUpon>MovieDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataAccessVw\Exercise1\MoviesPage.xaml.cs">
+      <DependentUpon>MoviesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataAccessVw\Exercise1\Services\MovieService.cs" />
     <Compile Include="Views\DataAccessVw\FileStoragePage.xaml.cs">
       <DependentUpon>FileStoragePage.xaml</DependentUpon>
     </Compile>
@@ -486,6 +494,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\DataAccessVw\RestServicePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DataAccessVw\Exercise1\MoviesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DataAccessVw\Exercise1\MovieDetailsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

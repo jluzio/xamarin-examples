@@ -13,10 +13,10 @@ namespace GenericDev.Views.ExtensionsVw
 	public partial class DateCell : ViewCell
 	{
         public static readonly BindableProperty LabelProperty = 
-            BindableProperty.Create("Label", typeof(String), typeof(DateCell));
+            BindableProperty.Create("Label", typeof(string), typeof(DateCell));
 
-        public String Label {
-            get { return (String)GetValue(LabelProperty); }
+        public string Label {
+            get { return (string)GetValue(LabelProperty); }
             set { SetValue(LabelProperty, value); }
         }
 
