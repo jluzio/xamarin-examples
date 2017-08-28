@@ -31,6 +31,8 @@ namespace GenericDev.Views
             Pages.ItemsSource = new List<Page>
             {
                 new GenericDev.Views.MiscVw.QuotesPage(),
+                new GenericDev.Views.MiscVw.ResourceDictionaryPage(),
+                new GenericDev.Views.MiscVw.DynamicResourcesPage(),
             };
         }
     }
