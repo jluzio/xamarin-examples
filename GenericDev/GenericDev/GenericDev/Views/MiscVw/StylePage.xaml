@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.Views.MiscVw.StylePage"
+             Title="Style">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Can be also included in App.xaml -->
+            <Style x:Key="button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Gray" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="primaryButton" TargetType="Button" BasedOn="{StaticResource button}">
+                <Setter Property="BackgroundColor" Value="Green" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Blue" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Primary Button" Style="{StaticResource primaryButton}"  />
+            <Button Text="Button" Style="{StaticResource button}"  />
+            <Label Text="Implicit Style" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

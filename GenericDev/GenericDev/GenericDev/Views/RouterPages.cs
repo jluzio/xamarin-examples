@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 using GenericDev.Views.CommonVw;
+using System.Collections.ObjectModel;
 
 namespace GenericDev.Views
 {
@@ -15,7 +16,7 @@ namespace GenericDev.Views
         public CurrentVwIndex() : base()
         {
             Title = "Current";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.FormsVw.Exercise1.ContactListPage(),
             };
@@ -28,11 +29,13 @@ namespace GenericDev.Views
         public MiscVwIndex() : base()
         {
             Title = "Misc";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.MiscVw.QuotesPage(),
                 new GenericDev.Views.MiscVw.ResourceDictionaryPage(),
                 new GenericDev.Views.MiscVw.DynamicResourcesPage(),
+                new GenericDev.Views.MiscVw.StylePage(),
+                new GenericDev.Views.MiscVw.MessagingCenterVw.EventSubscriberPage(),
             };
         }
     }
@@ -42,7 +45,7 @@ namespace GenericDev.Views
         public BindingVwIndex() : base()
         {
             Title = "Binding";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.BindingVw.BackwardsBindings(),
             };
@@ -54,7 +57,7 @@ namespace GenericDev.Views
         public StackLayoutVwIndex() : base()
         {
             Title = "Stack Layout";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.StackLayoutVwVw.Exercise1(),
                 new GenericDev.Views.StackLayoutVwVw.Exercise2(),
@@ -67,7 +70,7 @@ namespace GenericDev.Views
         public AbsoluteLayoutVwIndex() : base()
         {
             Title = "Absolute Layout";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.AbsoluteLayoutVw.Exercise1(),
                 new GenericDev.Views.AbsoluteLayoutVw.Exercise2(),
@@ -82,7 +85,7 @@ namespace GenericDev.Views
         public GridVwIndex() : base()
         {
             Title = "Grid";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.GridVw.Exercise1(),
                 new GenericDev.Views.GridVw.Exercise2(),
@@ -95,7 +98,7 @@ namespace GenericDev.Views
         public RelativeLayoutVwIndex() : base()
         {
             Title = "Relative Layout";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.RelativeLayoutVw.Exercise1(),
             };
@@ -107,7 +110,7 @@ namespace GenericDev.Views
         public ImageVwIndex() : base()
         {
             Title = "Image";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.ImageVw.EmbeddedImage(),
                 new GenericDev.Views.ImageVw.LocalImage(),
@@ -124,7 +127,7 @@ namespace GenericDev.Views
         public ListViewVwIndex() : base()
         {
             Title = "List View";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.ListViewVw.Exercise1(),
             };
@@ -136,7 +139,7 @@ namespace GenericDev.Views
         public NavigationVwIndex() : base()
         {
             Title = "Navigation";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.NavigationVw.Tabs(),
                 new GenericDev.Views.NavigationVw.Carousel(),
@@ -155,7 +158,7 @@ namespace GenericDev.Views
         public FormsVwIndex() : base()
         {
             Title = "Forms";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.FormsVw.FormElements(),
                 new GenericDev.Views.FormsVw.PickerElements(),
@@ -171,7 +174,7 @@ namespace GenericDev.Views
         public DataAccessVwIndex() : base()
         {
             Title = "Data Access";
-            Pages.ItemsSource = new List<Page>
+            Pages = new ObservableCollection<Page>
             {
                 new GenericDev.Views.DataAccessVw.ApplicationPropertiesPage(),
                 new GenericDev.Views.DataAccessVw.ApplicationPropertiesV2Page(),

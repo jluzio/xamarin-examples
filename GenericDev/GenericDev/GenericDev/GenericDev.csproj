@@ -117,8 +117,18 @@
     <Compile Include="Views\MiscVw\DynamicResourcesPage.xaml.cs">
       <DependentUpon>DynamicResourcesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\MiscVw\MessagingCenterVw\Events.cs" />
+    <Compile Include="Views\MiscVw\MessagingCenterVw\EventSenderPage.xaml.cs">
+      <DependentUpon>EventSenderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MiscVw\MessagingCenterVw\EventSubscriberPage.xaml.cs">
+      <DependentUpon>EventSubscriberPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MiscVw\ResourceDictionaryPage.xaml.cs">
       <DependentUpon>ResourceDictionaryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MiscVw\StylePage.xaml.cs">
+      <DependentUpon>StylePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NavigationVw\Popups.xaml.cs">
       <DependentUpon>Popups.xaml</DependentUpon>
@@ -524,6 +534,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MiscVw\DynamicResourcesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MiscVw\StylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MiscVw\MessagingCenterVw\EventSubscriberPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MiscVw\MessagingCenterVw\EventSenderPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
