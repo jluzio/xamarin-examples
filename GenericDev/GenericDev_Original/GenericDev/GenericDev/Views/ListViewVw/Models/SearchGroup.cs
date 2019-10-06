@@ -13,7 +13,7 @@ namespace GenericDev.Views.ListViewVw.Models
         public string ShortName { get; set; } //will be used for jump lists
         public string Subtitle { get; set; }
 
-        public SearchGroup(String title = null, String shortName = null)
+        public SearchGroup(string title = null, string shortName = null)
         {
             Title = title;
             ShortName = shortName;

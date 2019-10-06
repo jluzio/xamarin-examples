@@ -10,7 +10,7 @@ namespace GenericDev.Views.ListViewVw.Services
 {
     interface ISearchService
     {
-        IEnumerable<Search> GetSearches(String filter = null);
+        IEnumerable<Search> GetSearches(string filter = null);
         void DeleteSearch(int searchId);
         void Reload();
     }

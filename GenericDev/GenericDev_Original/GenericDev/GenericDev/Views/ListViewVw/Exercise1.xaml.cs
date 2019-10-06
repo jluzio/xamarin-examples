@@ -16,7 +16,7 @@ namespace GenericDev.Views.ListViewVw
     public partial class Exercise1 : ContentPage
     {
         private ISearchService SearchService;
-        private String SearchString;
+        private string SearchString;
 
         public Exercise1()
         {
@@ -40,7 +40,7 @@ namespace GenericDev.Views.ListViewVw
             SearchString = e.NewTextValue;
         }
 
-        private void PopulateView(String filter = null)
+        private void PopulateView(string filter = null)
         {
             var results = SearchService.GetSearches(filter);
 

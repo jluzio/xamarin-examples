@@ -8,7 +8,7 @@ namespace GenericDev.Views.NavigationVw.Models
 {
     public class Item
     {
-        public String Name { get; set; }
-        public String Page { get; set; }
+        public string Name { get; set; }
+        public string Page { get; set; }
     }
 }

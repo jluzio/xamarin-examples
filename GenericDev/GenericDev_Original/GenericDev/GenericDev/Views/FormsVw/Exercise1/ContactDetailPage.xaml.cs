@@ -24,7 +24,7 @@ namespace GenericDev.Views.FormsVw.Exercise1
         async private void saveBtn_Clicked(object sender, EventArgs e)
         {
             var contact = BindingContext as Contact;
-            if (String.IsNullOrEmpty(contact.FirstName) && String.IsNullOrEmpty(contact.LastName))
+            if (string.IsNullOrEmpty(contact.FirstName) && string.IsNullOrEmpty(contact.LastName))
             {
                 await DisplayAlert("Validation failed", "Please enter the name", "OK");
             }
