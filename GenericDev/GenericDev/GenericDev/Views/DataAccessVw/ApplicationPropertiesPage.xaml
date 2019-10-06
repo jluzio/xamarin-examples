@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.Views.DataAccessVw.ApplicationPropertiesPage"
+             Title="Application Properties">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell x:Name="title" 
+                                   Label="Title" Text="{Binding Title}" Placeholder="(eg Title)"
+                                   Completed="OnChange" />
+                        <SwitchCell x:Name="notificationsEnabled" 
+                                    Text="Notifications" On="{Binding NotificationEnabled}" 
+                                    OnChanged="OnChange" />
+                    </TableSection>
+                    <TableSection Title="Save when">
+                        <SwitchCell x:Name="onChangedEnabled" 
+                                    Text="On Change" On="{Binding OnChangeEnabled}" 
+                                    OnChanged="OnChange" />
+                        <SwitchCell x:Name="onLeavePageEnabled" 
+                                    Text="On Leave Page" On="{Binding OnLeavePageEnabled}" 
+                                    OnChanged="OnChange" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

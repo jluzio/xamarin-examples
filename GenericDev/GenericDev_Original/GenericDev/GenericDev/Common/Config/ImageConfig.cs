@@ -13,7 +13,7 @@ namespace GenericDev.Config
 {
     class ImageConfig
     {
-        public String Root
+        public string Root
         {
             get
             {

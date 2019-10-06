@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.Views.DataAccessVw.Exercise1.MoviesPage"
+             x:Name="page"
+             Title="Movies">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="searchBar" Placeholder="Actor" TextChanged="searchBar_TextChanged" />
+            <ActivityIndicator x:Name="searchIndicator" 
+                               IsRunning="{Binding IsSearching, Source={x:Reference page}}"
+                               IsVisible="{Binding IsSearching, Source={x:Reference page}}" />
+            <Frame x:Name="noResultsMessage" IsVisible="False" Padding="10">
+                <Label Text="No Results" />
+            </Frame>
+            <ListView x:Name="moviesListView" 
+                      ItemSelected="moviesListView_ItemSelected" 
+                      IsVisible="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Poster}" HeightRequest="64" />
+                                <StackLayout HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding ShowTitle}" TextColor="Black" />
+                                    <Label Text="{Binding ReleaseYear}" TextColor="Black" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

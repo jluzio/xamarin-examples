@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GenericDev.Views.CommonVw.RouterPage">
     <StackLayout VerticalOptions="FillAndExpand">
-        <ListView x:Name="pages" ItemSelected="pages_ItemSelected" 
+        <ListView x:Name="pagesListView" ItemSelected="pages_ItemSelected" 
                     VerticalOptions="Center" HorizontalOptions="Center">
             <ListView.ItemTemplate>
                 <DataTemplate>

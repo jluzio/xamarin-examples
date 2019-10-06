@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.Views.MiscVw.ResourceDictionaryPage"
+             Title="Resource Dictionary">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Int32 x:Key="borderRadius">20</x:Int32>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- defaultTextColor is global (App.xaml) -->
+            <Button 
+                Text="Button 1"
+                TextColor="{StaticResource defaultTextColor}"
+                BorderRadius="{StaticResource borderRadius}" />
+            <Button 
+                Text="Button 2"
+                TextColor="{StaticResource defaultTextColor}"
+                BorderRadius="{StaticResource borderRadius}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

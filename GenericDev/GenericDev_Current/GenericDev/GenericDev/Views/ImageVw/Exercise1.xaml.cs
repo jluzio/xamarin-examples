@@ -12,7 +12,7 @@ namespace GenericDev.Views.ImageVw
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Exercise1 : ContentPage
     {
-        private static String ImagePattern = "http://lorempixel.com/1920/1080/animals/{0}/";
+        private static string ImagePattern = "http://lorempixel.com/1920/1080/animals/{0}/";
         private static int MinImageIndex = 1;
         private static int MaxImageIndex = 10;
 
@@ -50,9 +50,9 @@ namespace GenericDev.Views.ImageVw
         private void image_PropertyChanging(object sender, PropertyChangingEventArgs e)
         {
             // Fix issues with UWP until bug is fixed in Xamarin 2.3.5 (?)
-            if (String.Equals(Device.RuntimePlatform, Device.Windows)) {
+            if (string.Equals(Device.RuntimePlatform, Device.Windows)) {
                 System.Diagnostics.Debug.WriteLine(String.Format("image_PropertyChanging {0}", e.PropertyName));
-                if (String.Equals(e.PropertyName, "IsLoading") && Device.RuntimePlatform == Device.Windows)
+                if (string.Equals(e.PropertyName, "IsLoading") && Device.RuntimePlatform == Device.Windows)
                 {
                     loadingIndicator.IsRunning = true;
                     loadingIndicator.IsVisible = true;
@@ -63,10 +63,10 @@ namespace GenericDev.Views.ImageVw
         private void image_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             // Fix issues with UWP until bug is fixed in Xamarin 2.3.5 (?)
-            if (String.Equals(Device.RuntimePlatform, Device.Windows))
+            if (string.Equals(Device.RuntimePlatform, Device.Windows))
             {
                 System.Diagnostics.Debug.WriteLine(String.Format("image_PropertyChanged {0}", e.PropertyName));
-                if (String.Equals(e.PropertyName, "IsLoading"))
+                if (string.Equals(e.PropertyName, "IsLoading"))
                 {
                     loadingIndicator.IsRunning = false;
                     loadingIndicator.IsVisible = false;

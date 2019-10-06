@@ -1,0 +1,8 @@
+﻿-- HTTP --
+Added Microsoft.Net.Http for Core and UWP libs (required both?)
+Added System.Net.Http for Android and iOS 
+  (don't know if is required, read somewhere iOS and Android have this lib)
+Added modernhttpclient in all modules. It enabled Android to access a HTTPS resource.
+
+-- REST --
+Added Newtonsoft.Json to Core module. It was supposed to add to other modules, check if it is so, but it worked for now

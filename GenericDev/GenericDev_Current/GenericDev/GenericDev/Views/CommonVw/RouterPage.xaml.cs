@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,16 @@ namespace GenericDev.Views.CommonVw
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RouterPage : ContentPage
     {
-        public global::Xamarin.Forms.ListView Pages
+        private ObservableCollection<Page> pages;
+
+        public ObservableCollection<Page> Pages
         {
-            get
+            get { return pages; }
+            set
             {
-                return pages;
+                pages = value;
+                pages.ForEach(page => page.Title = page.Title ?? page.GetType().Name);
+                pagesListView.ItemsSource = pages;
             }
         }
 
@@ -25,9 +31,10 @@ namespace GenericDev.Views.CommonVw
             InitializeComponent();
         }
 
-        public RouterPage(List<Page> pagesItemsSource) : this()
+
+        protected override void OnAppearing()
         {
-            pages.ItemsSource = pagesItemsSource;
+            base.OnAppearing();
         }
 
         async private void pages_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -36,7 +43,7 @@ namespace GenericDev.Views.CommonVw
             if (page != null)
             {
                 await Navigation.PushAsync(page);
-                pages.SelectedItem = null;
+                pagesListView.SelectedItem = null;
             }
         }
     }
