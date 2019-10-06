@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GenericDev.Views.ExtensionsVw"
+             x:Class="GenericDev.Views.FormsVw.TableViewPage"
+             Title="Table View">
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Basics">
+                    <TextCell Text="Name" Detail="JC" />
+                    <EntryCell Label="Title" Placeholder="(eg Shopping)" />
+                    <SwitchCell Text="Notifications" On="True" />
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="13, 0">
+                            <Label Text="Start" />
+                            <DatePicker Date="1 Jan 2017" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                    <local:DateCell Label="Bindable label 1" />
+                    <local:DateCell Label="Bindable label 2" />
+                </TableSection>
+                <TableSection Title="ListView Select with Nav">
+                    <ViewCell x:Name="monkeyCell" Tapped="monkeyCell_Tapped">
+                        <StackLayout Orientation="Horizontal" Padding="13, 0">
+                            <Label Text="Monkey" />
+                            <Label x:Name="monkeyLabel" Text="(selected monkey)" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

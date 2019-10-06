@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenericDev.App">
+	<Application.Resources>
+
+		<!-- Application resource dictionary -->
+
+        <ResourceDictionary>
+            <x:String x:Key="appTitle">Xamarin Dev</x:String>
+            <x:String x:Key="buttonNext">Next</x:String>
+            <Style x:Key="TitleLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <OnPlatform x:Key="localImgRoot" x:TypeArguments="x:String"
+                        Android=""
+                        iOS=""
+                        WinPhone="LocalImages" />
+            <Color x:Key="defaultTextColor">Black</Color>
+            <Color x:Key="listViewTextColor">Black</Color>
+        </ResourceDictionary>
+
+	</Application.Resources>
+</Application>

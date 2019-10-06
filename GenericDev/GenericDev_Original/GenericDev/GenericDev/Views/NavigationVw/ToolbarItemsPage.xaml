@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GenericDev.MarkupExtensions"
+             x:Class="GenericDev.Views.NavigationVw.ToolbarItemsPage"             
+             Title="Toolbar Items">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="toolbarItem1" Text="toolbarItem1" Order="Primary" Icon="{local:ImageFile clock.png}" Activated="toolbarItem_Activated" />
+        <ToolbarItem x:Name="toolbarItem2" Text="toolbarItem2" Order="Secondary" IsDestructive="true" Activated="toolbarItem_Activated" />
+        <ToolbarItem x:Name="toolbarItem3" Text="toolbarItem3" Order="Secondary" Activated="toolbarItem_Activated" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <Label Text="Click all the stuff" />
+    </StackLayout>
+</ContentPage>
