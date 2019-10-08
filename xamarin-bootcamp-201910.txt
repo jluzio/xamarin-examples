@@ -1,0 +1,33 @@
+--- 2019/10/07 ---
+- Performance equiparável, em Java pode ser melhor
+- "80%" reutilizável
+- MVVM
+- Xamarin.Essentials: bibliotecas mais usadas com implementações nativas
+- MvvmLight
+- AsyncAwaitBestPractices
+- MvvmCross: permite 2 way binding e etcs
+
+IDE:
+- Visual Studio
+- Rider
+
+TAPTRAINING
+ligadosaomundo
+
+Outras abordagens:
+https://flutter.dev/
+
+-- Libs --
+MvvmLightLibs (Core + Android)
+AsyncAwaitBestPractices.MVVM (Core)
+
+Auth: tipicamente OAuth2 
+
+- Android Manifest
+<application>: add android:usesCleartextTraffic="true"
+<uses-permission android:name="android.permission.INTERNET" />
+
+Android:
+- namespace para textos/imagens por default que aparecem apenas no preview
+xmlns:tools="http://schemas.android.com/tools"
+tools:text / tools:src / etc
