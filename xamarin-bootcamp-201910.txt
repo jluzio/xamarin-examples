@@ -6,6 +6,7 @@
 - MvvmLight
 - AsyncAwaitBestPractices
 - MvvmCross: permite 2 way binding e etcs
+- FreshMvvm: outra alternativa
 
 IDE:
 - Visual Studio
